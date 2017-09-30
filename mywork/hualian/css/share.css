@@ -1,0 +1,376 @@
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+}
+.header{
+	width: 100%;
+	height: 30px;
+	width: 1200px;
+	height: 30px;
+	margin: 0 auto;
+}
+.header>ul{
+	overflow: hidden;
+	float: left;
+}
+.header>ul>li{
+	float: left;
+	font-size: 12px;
+	height: 20px;
+	margin-top: 5px;
+	color: #666;
+	border-right: 1px solid #666;
+	line-height: 20px;
+	padding: 0 10px;
+	
+}
+.header>ul>li:nth-of-type(4){
+	border: none;
+}
+.header>ol{
+	float: right;
+	width: 250px;
+	height: 20px;
+	margin-top: 5px;
+}
+.header>ol>li{
+	float: left;
+	width: 50px;
+	height: 100%;
+	padding-left: 30px;
+	position: relative;
+}
+.header>ol>li>a{
+	display: inline-block;
+	width: 60px;
+	height: 100%;
+	color: #666;
+	font-size: 12px;
+	line-height: 20px;
+	position: absolute;
+	top: -2px;
+	left:35px;
+}
+.header>ol>li>a:hover{
+	color: orange;
+}
+.red{
+	color: red;
+	font-weight: bold;
+}
+.header>ol>li:before{
+	content: "";
+	clear: both;
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	left: 15px;
+	background:url(../img/icon11.gif) no-repeat;
+}
+.header>ol>li:nth-of-type(2):before{
+	background:url(../img/icon12.gif) no-repeat 6px 3px ;
+}
+.header>ol>li:nth-of-type(3):before{
+	background:url(../img/icon13.gif) no-repeat 6px 2px ;
+}
+.header_fixde{
+	position: fixed;
+	width: 250px;
+	height: 240px;
+	top: 0;
+	left: 50%;
+	margin-left: -125px;
+	display: none;
+}
+.header_fixde>img{
+	width: 100%;
+	height: 100%;
+}
+.header_fixde>p{
+	position: absolute;
+	top: 0;
+	right: 7px;
+	cursor: pointer;
+}
+
+.top{
+	width: 100%;
+	height: 150px;
+	background-color: #f6f6f6;
+}
+.top>.top_center{
+	width: 1200px;
+	height: 150px;
+	margin: 0 auto;
+}
+.top_center>div{
+	width: 100%;
+	height: 110px;
+	border: 1px solid #f6f6f6;
+}
+.top>.top_center>div>h2{
+	margin-top: 25px;
+	color: #333;
+}
+.top>.top_center>div>p{
+	margin-top: 5px;
+	font-size: 16px;
+	color: #333;
+}
+.top_center>div>img{
+	float: right;
+	margin-top: -60px;
+	margin-right: 20px;
+}
+.top_center>ul{
+	width: 100%;
+	height: 40px;
+	background-color: #2b75be;
+}
+.top_center>ul>li{
+	float: left;
+	width: 115px;
+	height: 40px;
+}
+.top_center>ul>li>a{
+	display: inline-block;
+	width: 115px;
+	height: 40px;
+	color:#fff;
+	text-align: center;
+	line-height: 40px;
+	font-size: 14px;
+	font-weight: bold;
+}
+.active{
+	background: #2461a0;
+}
+
+.wrap{
+	width: 1200px;
+	margin: 0 auto;
+	margin-top: 15px;
+	position: relative;
+	*zoom: 1;
+}
+.wrap:after{
+	content: "";
+	clear: both;
+	display: block;
+}
+.wrap_heder{
+	width: 100%;
+	height: 125px;
+	border: 1px solid #bbb;
+}
+.wrap_heder>li{
+	float: left;
+	width: 139px;
+	margin-left: 9px;
+	height: 105px;
+	margin-top: 10px;
+	overflow: hidden;
+	box-sizing: border-box;
+	border: 1px solid #ccc;
+	position: relative;
+}
+.wrap_heder>li:hover{
+	border: 1px solid red;
+}
+.wrap_heder>li:hover a>p{
+	color: red;
+} 
+.wrap_heder>li>a>img{
+	width: 100%;
+	height: 100%;
+}
+.wrap_heder>li>a>p{
+	width: 100%;
+	height: 20px;
+	color:#eee;
+	text-align: center;
+	line-height: 20px;
+	font-size: 14px;
+	background: rgba(0,0,0,0.5);
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+.wrap_top{
+	width: 100%;
+	height: 20px;
+	margin-top: 8px;
+	margin-bottom: 8px;
+}
+.wrap>.icon{
+	position: absolute;
+	top: 106px;
+	right: 5px;
+}
+.wrap_top>img{
+	float: left;
+	margin-right: 5px;
+	margin-top: 1px;
+}
+.wrap_top>span:nth-of-type(1){
+	float: left;
+	font-size: 14px;
+	color: #777;
+}
+.wrap_top>span:nth-of-type(1)>a{
+	font-size: 14px;
+	color: #666;
+	text-decoration: underline;
+	margin: -4px 5px 0 5px;
+}
+.wrap_top>span:nth-of-type(2){
+	float: right;
+	font-size: 14px;
+	color: #777;
+}
+.wrap_top>span:nth-of-type(2)>p{
+	display: inline;
+	font-size: 14px;
+	color: #777;
+	margin: 0 5px;
+}
+
+.wrap_left:after{
+	content: "";
+	clear: both;
+	display: block;
+}
+.wrap_left{
+	*zoom: 1;
+	width: 200px;
+	float: left;
+}
+.wrap_left>div:nth-of-type(1),.wrap_left>div:nth-of-type(3){
+	width: 100%;
+	height: 300px;
+	border: 1px solid #ddd;
+}
+.wrap_left>div:nth-of-type(1)>div , .wrap_left>div:nth-of-type(3)>div{
+	width: 180px;
+	height: 132px;
+	margin: 11px auto;
+	position: relative;
+}
+.wrap_left>div:nth-of-type(1)>div>a>img , .wrap_left>div:nth-of-type(3)>div>a>img {
+	width: 100%;
+	height: 100%;
+}
+.wrap_left>div:nth-of-type(1)>div>a>p , .wrap_left>div:nth-of-type(3)>div>a>p{
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 20px;
+	text-align: center;
+	line-height: 20px;
+	background: rgba(0,0,0,0.5);
+	font-size: 14px;
+	color: #fff;
+}
+.wrap_left>div:nth-of-type(2){
+	width: 200px;
+	height: 160px;
+	margin: 10px 0;
+	border: 1px solid #ddd;
+}
+.wrap_left>div:nth-of-type(2)>span{
+	display: block;
+	width: 100%;
+	height: 35px;
+	background: #eee;
+	line-height: 35px;
+}
+.wrap_left>div:nth-of-type(2)>span>p{
+	font-size: 14px;
+	font-weight: bold;
+	float: left;
+	margin-left: 20px;
+	color: #666;
+}
+.wrap_left>div:nth-of-type(2)>span>a{
+	float: right;
+	margin-right: 20px;
+	margin-top: -1px;
+	cursor: pointer;
+}
+.wrap_left>div:nth-of-type(2)>ul{
+	width: 170px;
+	height: 120px;
+	float: right;
+}
+.wrap_left>div:nth-of-type(2)>ul>li:after{
+	content: "";
+	display: block;
+	width: 10px;
+	height: 10px;
+	margin-top: -15px;
+	margin-left: -15px;
+	background: url(../img/icon1.gif) no-repeat;
+}
+.wrap_left>div:nth-of-type(2)>ul>li{
+	*zoom: 1;
+	width: 100%;
+	height: 24px;
+	line-height: 24px;
+	font-size: 12px;
+	color: #666;
+	position: relative;
+}
+.wrap_left>div:nth-of-type(2)>ul>li:nth-of-type(1){
+	margin-top: 12px;
+}
+.wrap_left>div>div:hover{
+	border: 1px solid red;
+}
+.wrap_left>div>div:hover a>p{
+	color: red;
+}
+
+
+
+.footer{
+	width: 1200px;
+	height: 60px;
+	margin: 10px auto;
+	border: 1px solid #aaa;
+}
+.footer>div{
+	text-align: center;
+	width: 700px;
+	height: 20px;
+	margin: 20px auto;
+	line-height: 20px;
+	color: #777;
+	font-size: 14px;
+}
+.footer>div>a{
+	line-height: 20px;
+	color: #555;
+	font-size: 14px;
+	text-decoration: underline;
+	margin: 0 5px;
+}
+.footer>div>a:hover{
+	color: red;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

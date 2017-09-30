@@ -1,0 +1,595 @@
+/*
+* @Author: admin
+* @Date:   2017-08-07 09:57:16
+* @Last Modified by:   admin
+* @Last Modified time: 2017-08-14 21:35:22
+*/
+
+*{
+	margin:0px;
+	padding: 0px;
+	text-decoration: none;
+	list-style: none;
+}
+html,body,section{
+	width:100%;
+	height:100%;
+}
+body{
+	overflow: hidden;
+
+}
+.side{
+	position: fixed;
+	width:22px;
+	height:364px;
+	right: 20px;
+	top: 50%;
+	margin-top:-182px;
+	z-index: 3;
+}
+.side li{
+	width:20px;
+	height:20px;
+	border: 1px solid #dc6031;
+	border-radius:50%;
+	margin-top: 30px;
+	cursor: pointer;
+}
+.side .current{
+	background:url('../images/side_bg.png') 2px 1px;
+	background-size:90%;
+	width:40px;
+	height:40px;
+    border:none; 
+	margin-left: -10px;
+	animation: circle 3s linear infinite; 
+}
+@keyframes circle{
+	from{
+		transform:rotate(0deg);
+	}
+	to{
+		transform:rotate(360deg);
+	}
+}
+section{
+	position:relative;
+}
+section>div{
+	width: 100%;
+	height: 100%;
+	position:relative;
+	overflow:hidden;
+}
+
+
+.screen1{
+	background: url('../images/bg01.jpg');
+	background-size: 100% 100%;
+}
+.balloon{
+	display:block;
+	position:absolute;
+	left:43%;
+	top: 10%;
+	transform:scale(0.7);
+	z-index:1;
+	animation:ballon 6s linear infinite;
+}
+
+@keyframes ballon{
+	0%{
+		top: 10%;
+	}
+	50%{
+		top: 3%;
+	}
+	100%{
+		top: 10%;
+	}
+}
+
+.cloud{
+	position:absolute;
+	z-index:0;
+	transform:translate(1200px,0px) scale(0.7);
+	animation:cloud 25s linear infinite;
+}
+
+@keyframes cloud{
+	0%{
+		transform:translate(1200px,0px) scale(0.7);
+	}
+	100%{
+		transform:translate(0px,0px) scale(0.7);
+	}
+}
+.scloud{
+	position:absolute;
+	z-index:0;
+	transform:translate(100px,200px) scale(0.7);
+	animation:scloud 25s linear infinite;
+}
+@keyframes scloud{
+	0%{
+		transform:translate(100px,200px) scale(0.7);
+	}
+	100%{
+		transform:translate(1600px,200px) scale(0.7);
+	}
+}
+
+
+
+.screen2{
+	background: url('../images/bg02.jpg');
+	background-size: 100% 100%;
+}
+.compass{
+	transform:scale(0.7);
+	position:absolute;
+	left:43%;
+	top: 7%;
+}
+.compass1{
+	transform:scale(0.7);
+	position:absolute;
+	left:45.3%;
+	top: 12.5%;
+	z-index:1;
+	animation:compass1 6s linear infinite;
+}
+@keyframes compass1{
+	0%{
+		transform:rotate(0deg) scale(0.7);
+	}
+	50%{
+		transform:rotate(180deg) scale(0.7);
+	}
+	100%{
+		transform:rotate(360deg) scale(0.7);
+	}
+}
+
+
+
+
+.screen3{
+	background: url('../images/bg03.jpg');
+	background-size: 100% 100%;
+}
+.conch{
+	position:absolute;
+	top: 8%;
+	left:43%;
+	transform: scale(0.7);
+	animation:conch 15s linear infinite;
+	z-index:1;
+}
+@keyframes conch{
+	0%{
+		top: 8%;
+	}
+	50%{
+		top: 2%;
+	}
+	100%{
+		top: 8%;
+	}
+}
+.dot1{
+	transform:translate(670px,180px);
+	animation:pao1 6s linear infinite;
+}
+.dot2{
+	transform:translate(730px,185px);
+	animation:pao2 8s linear infinite;
+}
+.dot3{
+	transform:translate(696px,195px);
+	animation:pao3 4s linear infinite;
+}
+.dot4{
+	transform:translate(700px,195px);
+	animation:pao4 5s linear infinite;
+}
+.dot5{
+	transform:translate(710px,190px);
+	animation:pao5 8s linear infinite;
+}
+.dot6{
+	transform:translate(730px,175px);
+	animation:pao6 7s linear infinite;
+}
+.dot7{
+	transform:translate(724px,180px);
+	animation:pao7 6s linear infinite;
+}
+.dot8{
+	transform:translate(689px,185px);
+	animation:pao8 5s linear infinite;
+}
+@keyframes pao1{
+	0%{
+		transform:translate(670px,180px) scale(1);
+	}
+	100%{
+		transform:translate(670px,0px) scale(1.2);
+	}
+}
+@keyframes pao2{
+	0%{
+		transform:translate(730px,185px) scale(1);
+	}
+	100%{
+		transform:translate(730px,0px) scale(1.2);
+	}
+}
+@keyframes pao3{
+	0%{
+		transform:translate(696px,205px) scale(1);
+	}
+	100%{
+		transform:translate(696px,0px) scale(1.2);
+	}
+}
+@keyframes pao4{
+	0%{
+		transform:translate(700px,205px) scale(1);
+	}
+	100%{
+		transform:translate(700px,0px) scale(1.2);
+	}
+}
+@keyframes pao5{
+	0%{
+		transform:translate(710px,190px) scale(1);
+	}
+	100%{
+		transform:translate(710px,0px) scale(1.2);
+	}
+}
+@keyframes pao6{
+	0%{
+		transform:translate(692px,190px) scale(1);
+	}
+	100%{
+		transform:translate(690px,0px) scale(1.2);
+	}
+}
+@keyframes pao7{
+	0%{
+		transform:translate(724px,200px) scale(1);
+	}
+	100%{
+		transform:translate(724px,0px) scale(1.2);
+	}
+}
+@keyframes pao8{
+	0%{
+		transform:translate(689px,205px) scale(1);
+	}
+	100%{
+		transform:translate(689px,0px) scale(1.2);
+	}
+}
+
+
+.screen4{
+	background: url('../images/bg04.jpg');
+	background-size: 100% 100%;
+}
+.screen4_span{
+	display:block;
+	width:200px;
+	height:500px;
+    position:absolute; 
+    left:45%;
+    top: 3%;
+	transform:rotate(30deg);
+	animation:span 10s linear infinite;
+}
+.screen4_span img{
+	width:100%;
+	height:250px;
+}
+@keyframes span{
+	0%{
+		transform: rotate(30deg);
+	}
+	50%{
+		transform: rotate(-30deg);
+	}
+	100%{
+		transform: rotate(30deg);
+	}
+}
+
+
+
+
+
+.screen5{
+	background: url('../images/bg05.jpg');
+	background-size: 100% 100%;
+}
+.pic{
+	position:absolute;
+	left:43%;
+	top: 90px;
+	transform:scale(1);
+	animation:pic 2s linear infinite;
+}
+@keyframes pic{
+	0%{
+     transform:scale(0.1);
+	}
+	100%{
+	 transform:scale(3.6);
+	}
+}
+.balloon02{
+	position:absolute;
+	transform:translate(1350px,430px) scale(0.7);
+	animation:balloon02 7s linear infinite;
+}
+@keyframes balloon02{
+	0%{
+     transform:translate(1350px,430px) scale(0.7);
+	}
+	50%{
+	 transform:translate(1350px,350px) scale(0.7);
+	}
+	100%{
+	 transform:translate(1350px,430px) scale(0.7);
+	}
+}
+.balloon03{
+	position:absolute;
+	transform:translate(1150px,450px) scale(0.7);
+	animation:balloon03 9s linear infinite;
+}
+@keyframes balloon03{
+	0%{
+     transform:translate(1150px,450px) scale(0.7);
+	}
+	50%{
+	 transform:translate(1150px,380px) scale(0.7);
+	}
+	100%{
+	 transform:translate(1150px,450px) scale(0.7);
+	}
+}
+
+
+
+
+
+
+.screen6{
+	background: url('../images/bg06.jpg');
+	background-size: 100% 100%;
+	overflow:hidden;
+}
+.aircraft{
+	position:absolute; 
+	left:43%;
+	top: 2%;
+	transform:scale(0.7);
+	animation:aircraft 15s linear infinite;
+}
+    @keyframes aircraft{
+ 	0%{
+ 		transform:translate(0px,2%) scale(0.7);
+ 	}
+ 	50%{
+ 		transform:translate(0px,-12%) scale(0.7);
+ 	}
+ 	100%{
+ 		transform:translate(0px,2%) scale(0.7);
+ 	}
+ } 
+
+.beijin{
+	position:absolute;
+	top: -100px;
+	width:100%;
+	height:200%;
+	opacity:0.3;
+	animation:beijin 5s linear infinite;
+}
+@keyframes beijin{
+	0%{
+		top: -100px;
+	}
+	100%{
+		top: 0px;
+	}
+}
+
+
+
+
+
+
+
+.screen7{
+	background: url('../images/bg07.jpg');
+	background-size: 100% 100%;
+}
+.hole-light{
+	position:absolute;
+	top: 0%;
+	left:40%;
+	transform:scale(0.7);
+	animation: black-hole 4s linear infinite;
+	z-index:2;
+}
+.black-hole{
+	position:absolute;
+	top: 0%;
+	left:40%;
+	transform:scale(0.7);
+	animation: black-hole 4s linear infinite;
+	opacity:0.6;
+}
+@keyframes black-hole{
+	0%{
+		transform:scale(0.7) rotate(0deg);
+	}
+	50%{
+		transform:scale(0.7) rotate(180deg);
+	}
+	100%{
+		transform:scale(0.7) rotate(360deg);
+	}
+}
+
+.screen7_dot1{
+		animation:dot1 3s linear infinite;
+}
+@keyframes dot1{
+	0%{
+		transform:translate(0,50px);
+	}
+	100%{
+		transform:translate(690px,150px);
+	}
+}
+.screen7_dot2{
+		animation:dot2 3s linear infinite;
+}
+@keyframes dot2{
+	0%{
+		transform:translate(1600px,0px);
+	}
+	100%{
+		transform:translate(690px,180px);
+	}
+}
+.screen7_dot3{
+		animation:dot3 3s linear infinite;
+}
+@keyframes dot3{
+		0%{
+ 			transform:translate(0px,600px);
+		}
+		100%{
+			transform:translate(650px,160px);
+		}
+}
+.screen7_dot4{
+		animation:dot4 3s linear infinite;
+}
+   @keyframes dot4{
+     	0%{
+ 			transform:translate(1600px,600px);
+		}
+		100%{
+			transform:translate(650px,160px);
+		}
+   }
+
+
+
+
+
+
+
+
+
+.music{
+	position:fixed;
+	width:50px;
+	hidden:50px;
+	top: 30px;
+	right:20px;
+	z-index:2;
+}
+
+.musiclei{
+		animation: mu 3s linear infinite; 
+}
+@keyframes mu{
+	0%{
+		transform:rotate(0deg);
+	}
+	100%{
+		transform:rotate(360deg);
+	}
+}
+
+
+.center{
+	position:fixed;
+	width:355px;
+	height:110px;
+	bottom:150px;
+	left: 50%;
+	margin-left:-177px;
+	z-index:2;
+}
+.center img{
+		margin-left:20px;
+		cursor:pointer;
+}
+.center p{
+	color:#fff;
+}
+
+.title{
+	width:100%;
+	height:100px;
+	position:absolute;
+	left:0px;
+	bottom:300px;
+	text-align: center;
+	z-index:2;
+}
+.title span{
+	display: inline-block;
+	background:url('../images/logo-text.png') no-repeat right center;
+	width:120px;
+	height:45px;
+	padding-right: 10px;
+	margin-right: 10px;
+	transition:2s;
+}
+.title img{
+	transition:2s;
+}
+.title p{
+	width:400px;
+	margin:0 auto;
+	color:#fff;
+	font-size: 12px;
+	transition:2s;
+	margin-top: 10px;
+}
+
+
+  .no>img{
+	margin-left:-1000px;
+	transform:rotate(180deg);
+} 
+.no p{
+	transform:scale(0.1);
+	opacity:0.1;
+}
+
+
+.logo01{
+	display:block;
+	position:fixed;
+	z-index:2;
+	top: 20px;
+	left:20px;
+}
+
+
+
+
+
+
+

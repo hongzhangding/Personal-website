@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="../css/qianxunttou.css">
+         <link rel="stylesheet" href="../css/footer.css">
+        <script src="../js/jquery-1.11.1.js"></script>
+        <script>
+        	$(function(){
+        			$('.top_1 ul li').hover(function() {
+        			/* Stuff to do when the mouse enters the element */
+        			$(this).children('a').addClass('lei');
+        			$(this).siblings('li').children('a').removeClass('lei');
+        		}, function() {
+        			/* Stuff to do when the mouse leaves the element */
+        			$('.top_1 ul li:nth-of-type(1)').children('a').addClass('lei').parent('li').siblings('li').children('a').removeClass('lei');
+        		});
+
+
+        			var a=0
+        		$('.wrap_top_right span:nth-of-type(1)').click(function(event) {
+        			/* Act on the event */
+        			a+=1;
+        			if (a>3) {
+        				a=0
+        			}
+        			$('.wrap_top_right ul').css('left', -100*a+'%');
+        		});
+        		$('.wrap_top_right span:nth-of-type(2)').click(function(event) {
+        			/* Act on the event */
+        			a-=1;
+        			if (a<0) {
+        				a=3
+        			}
+        			$('.wrap_top_right ul').css('left', -100*a+'%');
+        		});
+        	})
+        </script>
+        <style>
+        	*{
+        		margin: 0px;
+        		padding: 0px;
+        		text-decoration: none;
+        		list-style: none;
+        	}
+        	.wrap{
+        		width: 80%;
+        		height: 1475px;
+        		margin: 80px auto;
+        	}
+        	 .wrap_top{
+        		width: 100%;
+        		height: 200px;
+        	}
+        	.wrap_top_left{
+        		width: 20%;
+        		height: 100%;
+        		float: left;
+        		background: #fff;
+        	}
+        	.wrap_top_left button{
+				width: 70%;
+				height: 20%;
+				background: #3285fa;
+				color: #fff;
+				margin-top: 25%;
+				margin-left: 13%;
+				border: none;
+				font-size: 18px;
+				box-shadow: 0px 15px 10px #3285fa;
+				cursor: pointer;
+        	}
+        	.wrap_top_left div{
+        		width: 80%;
+				height: 30%;
+				color: #999;
+				font-size: 18px;
+				margin-left: 10%;
+				margin-top: 13%;
+				font-size: 14px;
+				text-align: center;
+        	}
+        	.wrap_top_left div span{
+        		color: #ff9000;
+        	}
+        	.wrap_top_right{
+        		width: 75%;
+        		height: 100%;
+        		float: right;
+        		overflow: hidden;
+        		position: relative;
+        	}
+        	.wrap_top_right ul{
+        		width: 400%;
+        		height: 100%;
+        		position: absolute;
+        	}
+        	.wrap_top_right ul li{
+        		float: left;
+        		width: 25%;
+        		height: 100%;
+        	}
+        	.wrap_top_right ul li img{
+        		width: 100%;
+        		height: 100%;
+        	}
+        	.wrap_top_right span{
+        		width: 35px;
+        		height: 55px;
+        		overflow: hidden;
+        		cursor: pointer;
+        	}
+        	.wrap_top_right span img{
+        		width: 100%;
+        		height: 100%;
+        		opacity: 0.6;
+        	}
+        	.wrap_top_right span:nth-of-type(1){
+        		position: absolute;
+        		top: 70px;
+        		left: 10px;
+        	}
+        	.wrap_top_right span:nth-of-type(2){
+        		position: absolute;
+        		top: 70px;
+        		right: 10px;
+        	}
+        	.wrap_header{
+        		width: 100%;
+        		height: 300px;
+        		background: #fff;
+        		margin-top: 10px;
+        		overflow: hidden;
+        	}
+        	.top_wrap{
+        		width: 100%;
+        		height: 40px;
+        	}
+        	.wrap_header_top img{
+        		float: left;
+        	}
+        	.lei_a{
+        		float: right;
+        		margin-top: 10px;
+        		font-size: 16px;
+        		color: #999;
+        		margin-right: 20px;
+        	}
+        	.left{
+        		float: left;
+        		width: 25%;
+        		height: 80%;
+        		margin-top: 10px;
+        		margin-left: 60px;
+        	}
+        	.right{
+        		float: right;
+        		width: 50%;
+        		height: 80%;
+        		margin-top: 10px;
+        	}
+        	.right ul{
+        		width: 85%;
+        		height: 95%;
+        		margin-left: 9%;
+        		margin-top: 5px;
+        	}
+        	.right ul li{
+        		float: left;
+        		width: 35%;
+        		height: 100%;
+        		margin-right: 45px;
+        	}
+        	.left_top{
+        		width: 80%;
+        		height: 40px;
+        		margin-top: 10px;
+        	}
+        	.left_top img{
+        		float: left;
+        		margin-left: 15px;
+        	}
+        	.left_top h3{
+        		float: right;
+        		color: #333;
+        		margin-top: 5px;
+        	}
+			.tow{
+				margin-right: 25px;
+			}
+			.ul1{
+				width: 85%;
+				height: 60%;
+				margin: 20px auto;
+				overflow: hidden;
+				background: url('../images/pptv_bg.png') no-repeat 0px 6px;
+			}
+			.ul2{
+				width: 85%;
+				height: 60%;
+				margin: 20px auto;
+				overflow: hidden;
+				background: url('../images/iqy_bg.png') no-repeat 70px 6px;
+			}
+			.ul3{
+				width: 85%;
+				height: 60%;
+				margin: 20px auto;
+				overflow: hidden;
+				background: url('../images/bdy_bg.png') no-repeat 0px 6px;
+			}
+			.ul4{
+				width: 85%;
+				height: 60%;
+				margin: 20px auto;
+				overflow: hidden;
+				background: url('../images/txt_bg.png') no-repeat 0px 6px;
+			}
+			
+			.right ul li img{
+				width: 100%;
+				height: 75%;
+				margin-bottom: 10px;
+			}
+			.right ul li span:nth-of-type(1){
+				font-size: 22px;
+				float: left;
+				margin-left:-10px;
+				font-weight: bold; 
+				color: #425766;
+			}
+			.right ul li span:nth-of-type(2){
+				margin-left: 10px;
+				margin-top: 15px;
+			}
+        </style>
+    </head>
+    <body>
+    <div class="top">
+    	<div class="top_1">
+            <div class="top_1_image"></div>
+    		<ul>
+    			<li><a href="duihuan.html" class="lei">兑换特权</a></li>
+    			<li><a href="wodejifen.html">我的积分</a></li>
+    			<li><a href="jifenguizhe.html">积分规则</a></li>
+    		</ul>
+    	</div>
+    </div>
+
+		<div class="wrap">
+			<div class="wrap_top">
+				<div class="wrap_top_left">
+					<button>签到抽奖</button>
+					<div>赚积分换特权，<br>
+					连续签到<span>3</span>天还能抽大奖</div>
+				</div>
+
+				<div class="wrap_top_right">
+					<ul>
+						<li><img src="../images/banner02.png" alt=""></li>
+						<li><img src="../images/banner01.png" alt=""></li>
+						<li><img src="../images/banner04.jpg" alt=""></li>
+						<li><img src="../images/banner03.jpg" alt=""></li>
+					</ul>
+					<span><img src="../images/zuo.JPG" alt=""></span>
+					<span><img src="../images/you.JPG" alt=""></span>
+				</div>
+			</div>
+
+
+<div class="wrap_header">
+	<div class="top_wrap">
+		<img src="../images/new.png" alt="">
+		<a href="" class="lei_a">了解更多</a>
+		</div>
+		<div class="left">
+			<div class="left_top">
+				<img src="../images/pptv.png" alt="">
+				<h3>PPTV聚力会员激活码</h3>
+			</div>
+			<ul class="ul1">
+
+			</ul>
+		</div>
+
+		<div class="right">
+			<ul>
+				<li><img src="../images/pptv7.png" alt="">
+					<span>500</span><span>积分</span>
+				</li>
+				<li><img src="../images/pptvm.png" alt="">
+					<span>1500</span><span>积分</span>
+				</li>
+			</ul>
+		</div>
+</div>
+<div class="wrap_header">
+	<div class="top_wrap">
+		<a href="" class="lei_a">了解更多</a>
+		</div>
+		<div class="left">
+			<div class="left_top">
+				<img src="../images/ipy.png" alt="" >
+				<h3 class="tow">爱奇艺VIP激活码</h3>
+			</div>
+
+			<ul class="ul2">
+
+			</ul>
+		</div>
+		<div class="right">
+			<ul>
+				<li><img src="../images/txt_day.png" alt="">
+				<span>500</span><span>积分</span>
+				</li>
+				<li><img src="../images/txt_month.png" alt="">
+				<span>1000</span><span>积分</span>
+				</li>
+			</ul>
+		</div>
+</div>
+<div class="wrap_header">
+	<div class="top_wrap">
+		<a href="" class="lei_a">了解更多</a>
+		</div>
+		<div class="left">
+			<div class="left_top">
+				<img src="../images/bdc.png" alt="">
+				<h3 class="tow">百度会员激活码</h3>
+			</div>
+
+			<ul class="ul3">
+
+			</ul>
+		</div>
+		<div class="right">
+			<ul>
+				<li><img src="../images/bdyone.png" alt="">
+					<span>500</span><span>积分</span>
+				</li>
+				<li><img src="" alt=""></li>
+			</ul>
+		</div>
+</div>
+<div class="wrap_header">
+	<div class="top_wrap">
+		<a href="" class="lei_a">了解更多</a>
+		</div>
+		<div class="left">
+			<div class="left_top">
+				<img src="../images/txt.png" alt="">
+				<h3>百度文库VIP激活码</h3>
+			</div>
+
+			<ul class="ul4">
+
+			</ul>
+		</div>
+		<div class="right">
+			<ul>
+				<li><img src="../images/iqyday.png" alt="">
+					<span>800</span><span>积分</span>
+				</li>
+				<li><img src="../images/iqymonth.png" alt="">
+					<span>4000</span><span>积分</span>
+				</li>
+			</ul>
+		</div>
+</div>
+
+
+
+<div class="footer">
+                <ul>
+                    <li><a href="index.html">关于我们</a></li>
+                    <li><a href="../html/banben.html" >版本日志</a></li>
+                    <li><a href="jifenguizhe.html" >积分商城</a></li>
+                    <li><a href="">应用商店</a></li>
+                    <li><a href="2.html" >论坛反馈</a></li>
+                </ul>
+            </div>
+
+
+
+		</div>
+
+    </body>
+</html>

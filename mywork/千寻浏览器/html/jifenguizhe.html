@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="../css/qianxunttou.css">
+         <link rel="stylesheet" href="../css/footer.css">
+        <script src="../js/jquery-1.11.1.js"></script>
+        <script>
+            $(function(){
+                $('.top_1 ul li').hover(function() {
+                    /* Stuff to do when the mouse enters the element */
+                    $(this).children('a').addClass('lei');
+                    $(this).siblings('li').children('a').removeClass('lei');
+                }, function() {
+                    /* Stuff to do when the mouse leaves the element */
+                    $('.top_1 ul li:nth-of-type(3)').children('a').addClass('lei').parent('li').siblings('li').children('a').removeClass('lei');
+                });
+            })
+        </script>
+        <style>
+        	.wrap{
+        		width: 1000px;
+        		height: 1157px;
+        		margin: 80px auto;
+        	}
+        	.wrap ul{
+        		width: 100%;
+        		height: 400px;
+        	}
+        	.wrap ul li{
+        		width: 100%;
+        		height: 100px;
+        		margin-top: 30px;
+        		margin-bottom: 30px;
+        	}
+        	.wrap ul li h3{
+        		margin-bottom: 20px;
+        	}
+        	.wrap_1{
+        		width: 100%;
+        		height: 300px;
+        		border-collapse: collapse;
+        		background: #eff3f6;
+        	}
+        	.wrap_1 tr{
+        		border: 1px solid #aaa;
+        		text-align: center;
+				
+        	}
+        	.wrap_1 tr:nth-of-type(1)
+        	{
+        		background: #e4e7eb;
+        		font-weight: bold;
+        	}
+			
+			.wrap p:nth-of-type(1){
+				font-weight: bold;
+				margin-top: 30px;
+			}
+			
+			.wrap_2{
+        		width: 50%;
+        		height: 300px;
+        		border-collapse: collapse;
+        		background: #eff3f6;
+        	}
+        	.wrap_2 tr{
+        		border: 1px solid #aaa;
+        		text-align: center;
+				
+        	}
+        	.wrap_2 tr:nth-of-type(1)
+        	{
+        		background: #e4e7eb;
+        		font-weight: bold;
+        	}
+        	.wrap p:nth-of-type(2){
+        		color: #aaa;
+        		font-size: 14px;
+        		margin-top: 30px;
+        	}
+        </style>
+    </head>
+    <body>
+    <div class="top">
+    	<div class="top_1">
+            <div class="top_1_image"></div>
+    		<ul>
+    			<li><a href="duihuan.html">兑换特权</a></li>
+    			<li><a href="wodejifen.html">我的积分</a></li>
+    			<li><a href="jifenguizhe.html" class="lei">积分规则</a></li>
+    		</ul>
+    	</div>
+    </div>
+    <div class="wrap">
+    	<ul>
+    		<li>
+    		<h3>百度浏览器积分商城是什么？</h3>
+    		<p>为了答谢忠实客户，百度浏览器搭建了积分商城，作为向忠实用户免费发放福利的平台</p>
+    		</li>
+    		<li>
+    		<h3>积分的用途是什么</h3>
+    		<p>用积分可以兑换百度浏览器向忠实用户提供特权，每类特权每天仅兑换1个，目前积分商城一斤支付还是持续扩大，如果你还想要其他特权，可以告诉我们</p>
+    		</li>
+    		<li>
+    		<h3>积分的用途是什么</h3>
+    		<p>你只需要登陆百度浏览器，日常进行搜索he范文垃圾都是佛科技的示范离开家</p>
+    		</li>
+    	</ul>
+    	<table class="wrap_1">
+    		<tr>
+    			<td width="180px">获取途径</td>
+    			<td width="180px">分值</td>
+    			<td width="180px">每日上限</td>
+    			<td width="440px">说明</td>
+    		</tr>
+    		<tr>
+    			<td >登录在线</td>
+    			<td>5分、小时</td>
+    			<td>120分</td>
+    			<td>需要不同搜索词，相同搜索不重复计算分数</td>
+    		</tr>
+    		<tr>
+    			<td>登录在线</td>
+    			<td>5分、小时</td>
+    			<td>120分</td>
+    			<td>需要不同搜索词，相同搜索不重复计算分数</td>
+    		</tr>
+    		<tr>
+    			<td>登录在线</td>
+    			<td>5分、小时</td>
+    			<td>120分</td>
+    			<td>需要不同搜索词，相同搜索不重复计算分数</td>
+    		</tr>
+    	</table>
+       <p>积分消耗</p>
+       <table class="wrap_2">
+       	<tr>
+       		<td>消耗途径</td>
+       		<td>分值</td>
+       	</tr>
+       	<tr>
+       		<td>兑换特权</td>
+       		<td>对应特权积分</td>
+       	</tr>
+       	<tr>
+       		<td>连续30天未登录</td>
+       		<td>积分减少50%</td>
+       	</tr>
+       	<tr>
+       		<td>连续60天未登录</td>
+       		<td>积分减少50%</td>
+       	</tr>
+       	<tr>
+       		<td>连续90天未登录</td>
+       		<td>积分消零</td>
+       	</tr>
+       </table>
+       <p>积分兑换特权系百度浏览器赠送给用户免费福利，最终解释权归百度浏览器所有</p>
+    </div>
+
+
+
+    <div class="footer">
+                <ul>
+                    <li><a href="index.html">关于我们</a></li>
+                    <li><a href="../html/banben.html" >版本日志</a></li>
+                    <li><a href="jifenguizhe.html" >积分商城</a></li>
+                    <li><a href="">应用商店</a></li>
+                    <li><a href="2.html" >论坛反馈</a></li>
+                </ul>
+            </div>
+    </body>
+</html>

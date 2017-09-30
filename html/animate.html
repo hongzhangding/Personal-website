@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="../css/header.css">
+        <link rel="stylesheet" href="../css/banner.css">
+        <link rel="stylesheet" href="../css/animate.css">
+        <link rel="stylesheet" href="../css/footer.css">
+        <link rel="stylesheet" href="../css/hover-min.css" />
+        <script src="../js/jquery-1.11.1.js"></script>
+        <script src="../js/baner.js"></script>
+        <script>
+       $(function(){
+
+
+            //旋转添加移除类名
+            $('.wrap_quan').hover(function() {
+                $(this).children('.quan_nav').removeClass('no');
+                $('.wrap_quan span').stop().fadeIn(400);
+                $('.wrap_quan .gon').stop().fadeIn(500);
+            }, function() {
+                $(this).children('.quan_nav').addClass('no');
+                $('.wrap_quan span').stop().fadeOut(400);
+                $('.wrap_quan .gon').stop().fadeOut(500);
+
+                $('.quan_nav ul').css('display', 'block');
+            });
+
+
+
+                var b=1;
+
+            //点击上下左右事件
+            $('.wrap_quan span').eq(0).click(function(event) {
+                $('.quan_nav ul').css('display', 'block');
+                $('.quan_nav').css('transform', 'rotateX(90deg)');
+
+
+                b+=1;
+                if(b>6){
+                    b=0;
+                }
+
+                if(b==1){
+                    aa1();
+                }
+                else if(b==2){
+                    aa2();
+                }
+                else if(b==3){
+                    aa3();
+                }
+                else if(b==4){
+                    aa4();
+                }
+                else if(b==5){
+                    aa5();
+                }
+                else if(b==6){
+                    aa6();
+                }
+            });
+            //下
+            $('.wrap_quan span').eq(1).click(function(event) {
+                $('.quan_nav ul').css('display', 'block');
+                 $('.quan_nav').css('transform', 'rotateX(90deg)');
+
+
+
+                b-=1;
+                if(b<1){
+                    b=6;
+                }
+
+                if(b==1){
+                    aa1();
+                }
+                else if(b==2){
+                    aa2();
+                }
+                else if(b==3){
+                    aa3();
+                }
+                else if(b==4){
+                    aa4();
+                }
+                else if(b==5){
+                    aa5();
+                }
+                else if(b==6){
+                    aa6();
+                }
+            });
+
+
+
+            function aa1(){
+                $('.quan_nav ul').css('transform', 'rotateX(90deg)');
+            }
+            function aa2(){
+                $('.quan_nav ul').css('transform', 'rotateX(150deg)');
+            }
+            function aa3(){
+                $('.quan_nav ul').css('transform', 'rotateX(210deg)');
+            }
+            function aa4(){
+                $('.quan_nav ul').css('transform', 'rotateX(270deg)');
+            }
+            function aa5(){
+                $('.quan_nav ul').css('transform', 'rotateX(330deg)');
+            }
+            function aa6(){
+                $('.quan_nav ul').css('transform', 'rotateX(390deg)');
+            }
+
+
+
+            var num=6;
+            //左
+            $('.zuo').click(function(event) {
+                    $('.quan_nav ul').css('display', 'none');
+
+                 num+=1;
+                 if(num>6){
+                    num=1;
+                 }
+
+                 if(num==1){
+                    bb1();
+                 }
+                 if(num==2){
+                    bb2();
+                 }
+                 if(num==3){
+                    bb3();
+                 }
+                 if(num==4){
+                    bb4();
+                 }
+                 if(num==5){
+                    bb5();
+                 }
+                 if(num==6){
+                    bb6();
+                 }
+
+            });
+
+            $('.you').click(function(event) {
+                     $('.quan_nav ul').css('display', 'none');
+
+                num-=1;
+                if(num<1){
+                    num=6;
+                }
+
+
+                if(num==1){
+                    bb1();
+                }
+                 else if(num==2){
+                    bb2();
+                }
+                 else if(num==3){
+                    bb3();
+                }
+                 else if(num==4){
+                    bb4();
+                }
+                 else if(num==5){
+                    bb5();
+                }
+                 else if(num==1){
+                    bb6();
+                }
+
+            });
+
+
+            function bb1(){
+                $('.quan_nav').css('transform', 'rotateY(-60deg)');
+            }
+            function bb2(){
+                $('.quan_nav').css('transform', 'rotateY(-120deg)');
+            }
+            function bb3(){
+                $('.quan_nav').css('transform', 'rotateY(-180deg)');
+            }
+            function bb4(){
+                $('.quan_nav').css('transform', 'rotateY(-240deg)');
+            }
+            function bb5(){
+                $('.quan_nav').css('transform', 'rotateY(-300deg)');
+            }
+            function bb6(){
+                $('.quan_nav').css('transform', 'rotateY(-360deg)');
+            }
+
+
+
+
+            //移入移出变化效果；
+            //外层
+            $('.quan_nav div').hover(function() {
+                $(this).children('a').children('p').css('background', 'none');
+                $(this).children('a').children('img').css('transform', 'scale(1.1)');
+            }, function() {
+                $(this).children('a').children('p').css('background', 'rgba(0,0,0,0.2)');
+                $(this).children('a').children('img').css('transform', 'scale(1)');
+            });
+
+            //内层
+            $('.quan_nav ul li').hover(function() {
+                $(this).children('a').children('p').css('background', 'none');
+                $(this).children('a').children('img').css('transform', 'scale(1.1)');
+            }, function() {
+                $(this).children('a').children('p').css('background', 'rgba(0,0,0,0.2)');
+                $(this).children('a').children('img').css('transform', 'scale(1)');
+            });
+
+})
+       
+        </script>
+    </head>
+    <body>
+    <div class="header">
+    <img src="../images/logo.png" alt="" class="logo">
+    	<ul>
+    		<li><a href="index.html"  class="hvr-float-shadow">首页</a></li>
+    		<li><a href="animate.html" class="header_lei">动画之家</a></li>
+    		<li><a href="mywork.html"  class="hvr-float-shadow">我的作品</a></li>
+            <li><a href="introduction.html"  class="hvr-float-shadow">个人介绍</a></li>
+    		<li><a href="college.html"  class="hvr-float-shadow">大学生活</a></li>
+    	</ul>
+    </div>
+
+
+
+
+
+		<div class="banner">
+    	<ul>
+    		<li class="banner_lei">
+    		<a href="index.html">
+    		<img src="../images/banner1a.png" alt="">
+    		<span class="banner_li_span">欢迎进入一个美丽的网站</span>
+    		</a>
+    		</li>
+
+    		<li>
+    		<a href="animate.html">
+    		<img src="../images/banner2a.png" alt="">
+    		<span class="banner_li_span">欢迎进入我的动画之家</span>
+    		</a>
+    		</li>
+
+    		<li>
+    		<a href="mywork.html">
+    		<img src="../images/banner3a.png" alt="">
+    		<span class="banner_li_span">生活是创作的灵感</span>
+    		</a>
+    		</li>
+
+    		<li>
+    		<a href="introduction.html">
+    		<img src="../images/banner4a.png" alt="">
+    		<span class="banner_li_span">展示自己，别人才有可能看到你</span>
+    		</a>
+    		</li>
+
+    		<li>
+    		<a href="college.html">
+    		<img src="../images/banner5a.png" alt="">
+    		<span class="banner_li_span">青春洋溢的大学</span>
+    		</a>
+    		</li>
+    	</ul>
+			
+			<ol>
+				<li><p></p></li>
+				<li><p></p></li>
+				<li><p></p></li>
+				<li><p></p></li>
+				<li><p></p></li>
+			</ol>
+
+			<span><img src="../images/zuo.png" alt=""></span>
+			<span><img src="../images/you.png" alt=""></span>
+    </div>
+
+
+    <span class="nav_span">您当前位置:&nbsp;&nbsp;&nbsp;<a href="">动画之家</a></span>
+
+
+
+
+
+		<div class="wrap">
+			<div class="wrap_quan">
+				<div class="quan_nav no">
+					<div>
+                      <a href="../animate/飘色子/xing.html" target="_blank">
+                         <img src="../images/piaosezhi.JPG" alt="">
+                         <p>色子效果</p>
+                      </a>
+                    </div>
+					<div>
+                         <a href="../animate/梅花盛开/meihua.html" target="_blank">
+                         <img src="../images/meihua.JPG" alt="">
+                         <p>梅花效果</p>
+                      </a>               
+                    </div>
+					<div>
+                        <a href="../animate/飘照片/zhao.html" target="_blank">
+                            <img src="../images/piaozhaopian.JPG" alt="">
+                            <p>照片移动效果</p>
+                        </a>               
+                    </div>
+					<div>
+                         <a href="" target="_blank">
+                            <img src="" alt="">
+                        </a>                
+                    </div>
+					<div>
+                         <a href="" target="_blank">
+                            <img src="" alt="">
+                        </a>                
+                    </div>
+					<div>
+                         <a href="" target="_blank">
+                            <img src="" alt="">
+                        </a>                
+                    </div>
+
+
+
+
+					<ul>
+						<li>
+                            <a href="../animate/色子/xing.html" target="_blank">
+                                <img src="../images/3dsezhi1.JPG" alt="">
+                                <p>3d色子效果</p>
+                            </a>                  
+                        </li>
+						<li>
+                            <a href="../animate/照片墙/zhaopian.html" target="_blank">
+                                <img src="../images/zhaopianqian1.JPG" alt="">
+                                <p>照片墙</p>
+                            </a>                  
+                        </li>
+						<li>
+                            <a href="../animate/钟表/biao.html" target="_blank">
+                                <img src="../images/zhonbiao1.JPG" alt="">
+                                <p>钟表</p>
+                            </a>                  
+                        </li>
+						<li>
+                            <a href="" target="_blank">
+                                <img src="" alt="">
+                            </a>                  
+                        </li>
+						<li>
+                            <a href="" target="_blank">
+                                <img src="" alt="">
+                            </a>                  
+                        </li>
+						<li>
+                            <a href="" target="_blank">
+                                <img src="" alt="">
+                            </a>                  
+                        </li>
+					</ul>
+				</div>
+
+
+            <span class="shang">
+           <img src="../images/shang.png" alt="">
+            </span>
+            <span class="xia">
+            <img src="../images/xia.png" alt=""></span>
+
+
+            <div class="gon zuo">
+          <img src="../images/lunbo.png" alt="">
+          </div>
+            <div class="gon you">
+            <img src="../images/lunbo2.png" alt=""></div>
+
+			</div>
+		</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+		<div class="footer">
+			<div class="footer_conter">
+				<img src="../images/erweima.png" alt="" class="conter_left">
+				<div class="conter_right">
+					<ul>
+						<li><a href="index.html">首页</a></li>
+						<li><a href="animate.html">动画之家</a></li>
+						<li><a href="mywork.html">我的作品</a></li>
+                        <li><a href="introduction.html">个人介绍</a></li>
+						<li><a href="college.html">大学生活</a></li>
+					</ul>
+					<span><a href="">这是一个美好的个人网站，主人想通过最简单的视角岑呈现给您，如果您仔细浏览，就会发现和了解主人的特点,喜欢打篮球，热爱代码，热爱思考创作，工作细心认真，有责任心，大气的男生,在最后谢谢您的浏览。</a></span>
+					
+				</div>
+			</div>
+			<img src="../images/logo.png" alt="" class="footer_logo">
+		</div>
+
+
+
+
+
+    </body>
+</html>

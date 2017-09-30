@@ -1,0 +1,165 @@
+.wrap_right{
+	width: 82%;
+	float: right;
+}
+.wrap_r_top{
+	width: 100%;
+	height: 250px;
+	border: 1px solid #ddd;
+}
+.top_span{
+	display: block;
+	width: 100%;
+	height: 35px;
+	background: #eee;
+	line-height: 35px;
+}
+.top_span>h3{
+	float: left;
+	margin-left: 30px;
+	font-size: 14px;
+	color: #777;
+}
+.top_span>a>img{
+	float: right;
+	margin-right: 10px;
+	margin-top: 3px;
+}
+.wrap_r_top>div{
+	width: 100%;
+	height: 190px;
+	margin-top: 15px;
+	position: relative;
+	overflow: hidden;
+}
+.wrap_r_top>div>ul{
+	width: 100%;
+	height: 380px;
+	position: absolute;
+}
+.wrap_r_top>div>ul>li{
+	width: 100%;
+	height: 175px;
+	margin-bottom: 30px;
+}
+.wrap_r_top>div>ul>li>div{
+	float: left;
+	width: 19%;
+	height: 100%;
+	margin-left: 4.3%;
+	text-align: center;
+	cursor: pointer;
+	 padding: 5px 0;
+}
+.wrap_r_top>div>ul>li>div:hover{
+	background: #f1f1f1;
+}
+.wrap_r_top>div>ul>li>div>a>img{
+	border: 1px solid #bbb;
+	width: 63%;
+}
+.wrap_r_top>div>ul>li>div>a>h3{
+	font-weight: normal;
+	font-size: 14px;
+	color: #666;
+	text-decoration: underline;
+	margin-top: 11px;
+}
+.wrap_r_top>div>ul>li>div>a>h3:hover{
+	color: #fb7b00;
+	text-decoration: none;
+}
+.wrap_r_top>div>ul>li>div>a>time{
+	display: block;
+	font-size: 12px;
+	color: #777;
+	margin-top: 7px;
+}
+.wrap_r_content{
+	width: 100%;
+	height: 280px;
+	margin: 15px 0;
+	border: 1px solid #ddd;
+}
+.wrap_r_content>span:nth-of-type(2){
+	display: block;
+	width: 96%;
+	height: 76%;
+	margin: 15px auto;
+	font-size: 14px;
+	color: #666;
+	line-height: 26px;
+}
+.wrap_r_content>span:nth-of-type(2)>a{
+	color: #225588;
+}
+.wrap_r_bottom{
+	width: 100%;
+	height: 460px;
+	border: 1px solid #ddd;
+}
+.wrap_r_bottom>ul{
+	width: 97%;
+	height: 87%;
+	margin: 10px auto;
+}
+.wrap_r_bottom>ul>li{
+	float: left;
+	width: 20%;
+	height: 50%;
+	box-sizing: border-box;
+	text-align: center;
+	cursor: pointer;
+	padding-top: 10px;
+}
+.wrap_r_bottom>ul>li:hover{
+	background: rgba(30,30,30,0.1);
+}
+.wrap_r_bottom>ul>li>a>img{
+	border: 1px solid #bbb;
+	width: 63%;
+}
+.wrap_r_bottom>ul>li>a>h3{
+	font-weight: normal;
+	font-size: 14px;
+	color: #666;
+	text-decoration: underline;
+	margin-top: 11px;
+	font-family: "黑体";
+	text-decoration: underline;
+}
+.wrap_r_bottom>ul>li>a>h3:hover{
+	color: #ff6600;
+	text-decoration: none;
+}
+.wrap_r_bottom>ul>li>a>time{
+	display: block;
+	font-size: 12px;
+	color: #777;
+	margin-top: 7px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

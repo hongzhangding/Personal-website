@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<link rel="stylesheet" href="css/2 5 7.css" />
+		<link rel="stylesheet" href="css/introduce.css" />
+		
+		<title></title>
+		<script type="text/javascript" src="js/jquery-1.8.3.min.js" ></script>
+		<script type="text/javascript">
+			window.onload=function(){
+				var xz=document.getElementsByClassName("radio");
+				for(var i=0;i<xz.length;i++){
+					xz[i].onclick=function(){
+						for(var a=0;a<xz.length;a++){
+							xz[a].checked=0;
+						}
+						this.checked=1;
+					}
+				}
+				
+		
+	var clicka = document.getElementById("li_a");
+	var nonea = document.getElementsByClassName("header_fixde")[0];
+	var fixed_p = document.getElementById("fixed_p");
+	var oTime = document.getElementById("time");
+	var ps = oTime.getElementsByTagName("p");
+
+	clicka.onclick = function() {
+		nonea.style.display = "block";
+	}
+	fixed_p.onclick = function() {
+		nonea.style.display = "none";
+	}
+
+	//时间
+	var time = new Date();
+	var Month = time.getMonth() + 1;
+	var da = time.getDate();
+	var xin = da % 7 - 3;
+	ps[0].innerText = Month;
+	ps[1].innerText = da;
+	ps[2].innerText = "星期" + xin;
+
+
+	
+				
+			}
+		</script>
+	</head>
+	<body>
+		<div class="header">
+			<ul>
+				<li>欢迎来到商路通</li>
+				<li>请登录</li>
+				<li>免费注册</li>
+				<li>忘记密码</li>
+			</ul>
+			
+			<ol>
+				<li><a href="">进货单(<span class="red">0</span>)</a></li>
+				<li><a href="JavaScript:;" id="li_a">二维码</a></li>
+				<li><a href="">手机版</a></li>
+			</ol>
+		</div>
+		<div class="header_fixde"><img src="img/display.JPG"/><p id="fixed_p">x</p></div>
+		<div class="top">
+			<div class="top_center">
+				<div>
+					<h2>广东华联软件科技有限公司</h2>
+					<p>工程造价软件，工程预算软件，建材信息查询，工程造价指标，项目商机</p>
+					<img src="img/free_bg.gif"/>
+				</div>
+				<ul>
+					<li><a href="index1.html">网站首页</a></li>
+					<li><a href="javascript:;"  class="active">公司介绍</a></li>
+					<li><a href="product3.html">供应产品</a></li>
+					<li><a href="purchase4.html">采购清单</a></li>
+					<li><a href="news5.html">新闻中心</a></li>
+					<li><a href="honor6.html">荣誉资质</a></li>
+					<li><a href="contact7.html">联系方式</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="wrap">
+			<ul class="wrap_heder">
+				<li><a href=""><img src="img/banner1.jpg"/><p>人力资源管理师</p></a></li>
+				<li><a href=""><img src="img/banner2.jpg"/><p>咽喉炎</p></a></li>
+				<li><a href=""><img src="img/banner3.jpg"/><p>IT培训</p></a></li>
+				<li><a href=""><img src="img/banner4.jpg"/><p>微型摄像机价格</p></a></li>
+				<li><a href=""><img src="img/banner5.jpg"/><p>双证在职研究生</p></a></li>
+				<li><a href=""><img src="img/banner6.jpg"/><p>真实的达内</p></a></li>
+				<li><a href=""><img src="img/banner7.jpg"/><p>电话销售外包</p></a></li>
+				<li><a href=""><img src="img/banner8.jpg"/><p>小项目外包</p></a></li>
+			</ul>
+			<img src="img/icon.png" alt="" class="icon"/>
+			    
+			<div class="wrap_top">
+				<img src="img/icon14.gif"/>
+				<span>您当前位置:<a href="javascript:;">首页</a>>>公司介绍</span>
+				<span id="time">今天是<p></p>月<p></p>日 <p></p></span>
+			</div>
+			<div class="wrap_left">
+				<div class="one">
+					<span class="share"><p>公司介绍</p></span>
+					<ul>
+						<li><a href="">造价168专业造价服务平台</a></li>
+						<li><a href="">诚信档案</a></li>
+						<li><a href="">联系方式</a></li>
+					</ul>
+				</div>
+				<div class="tow">
+					<div><a href="#"><img src="img/banner3.jpg"/><p>IT培训</p></a></div>
+					<div><a href="#"><img src="img/banner2.jpg"/><p>咽喉炎</p></a></div>
+				</div>
+				<div class="three">
+					<span class="share"><p>联系方式</p><img src="img/icon2.gif" alt="" /></span>
+					<ul>
+						<li>联系人：168客服</li>
+						<li>电话：400-020-1168</li>
+						<li>邮件：service@cost168.co</li>
+						<li>手机：400-020-1168</li>
+					</ul>
+				</div>
+				<div class="tow">
+					<div><a href=""><img src="img/banner9.jpg"/><p>达内的</p></a></div>
+					<div><a href=""><img src="img/banner10.jpg" alt="" /><p>达内真假</p></a></div>
+				</div>
+			</div>
+			
+			<div class="wrap_right">
+				<div class="right_top">
+					<span class="top_span">
+						<h3>公司介绍</h3>
+					</span>
+					<span class="right_top_bottom">
+						<p>广东华联建设项目管理咨询有限公司成立于1996年，经过十几年的不懈努力，成长为一家综合性建设咨询企业，先后成立了十多家分公司，是首批通过ISO9001质量管理体系认证的建设咨询企业，具备工程造价咨询甲级、工程监理甲级、工程招标代理甲级、工程咨询甲级资质、政府采购代理机构甲级和工程造价司法鉴定资格。公司现拥有专业技术人员310多名，其中，中高级以上职称的165名，高级工程师32名，广东省专家级人员6名，注册造价工程师、注册监理工程师、注册咨询工程师、一级建造师等共96名。公司先后被评为2010年中国建设工程造价管理协会工程造价咨询先进单位、连续三年被评为广东省诚信示范单位，连续5年被评为“守合同重信用企业”。</p>
+						<p>造价168服务平台是由广东华联建设项目管理咨询有限公司旗下子公司广东华联软件科技有限公司全额投资，并承担该平台的研究、开发、运营及服务。该平台主要为建设行业主管单位、建设单位、设计单位、咨询企业、施工企业、建材生产企业、建材供应商、专业院校及工程造价人员等提供集项目商机、材价信息、造价指标、计价软件及造价资讯为一体的专业造价服务。
+                           <br /><br />                                       
+                                                                     造价168服务平台拥有一批经验丰富的行业专家，整合了行业的优势资源，同时将最专业的造价全过程管理思想、最先进的云计算平台技术，与国内外市场相结合，为建设行业搭建成熟而实用的专业造价服务平台，提供快速、准确、优质的专业服务。</p>
+					</span>
+				</div>
+				
+				<div class="right_content">
+					<span class="top_span">
+						<h3>公司档案</h3>
+					</span>
+					<ul>
+						<li><span><p>公司名称：</p>广东华联软件科技有限公司</span><span><p>公司类型：</p>企业单位 (服务商)</span></li>
+						<li><span><p>所 在 地：</p>&nbsp;广东/广州市</span><span><p>公司规模：</p>50-99人</span></li>
+						<li><span><p>注册资本：</p>500万人民币</span><span><p>注册年份：</p>2005</span></li>
+						<li><p>资料认证：</p></li>
+						<li><p>保 证 金：</p>&nbsp;&nbsp;&nbsp;&nbsp;已缴纳<b>0.00</b>元</li>
+						<li><p>经营模式：</p>&nbsp;&nbsp;&nbsp;服务商</li>
+						<li><p>经营范围：</p>&nbsp;&nbsp;&nbsp;工程造价软件，工程预算软件，建材信息查询，工程造价指标，项目商机</li>
+						<li><p>销售的产品：</p>造价168|计价优|168参考价|人工询价</li>
+						<li>
+							<p>主营行业：</p>
+							<a href="">服务市场</a>
+							<div><a href="https://www.3566t.com/company/list-20022.html" target="_blank">建筑建材</a>/<a href="https://www.3566t.com/company/list-20957.html" target="_blank">其他未分类</a></div>
+						</li>
+					</ul>
+				</div>
+				<div class="right_bottom">
+					<span class="top_span">
+						<h3>相关评论</h3>
+					</span>
+					<div>
+						<table>
+							<tbody>
+								<tr>
+									<td>好评<img src="img/star3.gif" alt="" /></td>
+									<td><div></div></td>
+									<td><span>0%</span><span>0</span></td>
+								</tr>
+								<tr>
+									<td>中评<img src="img/star2.gif" alt="" /></td>
+									<td><div></div></td>
+									<td><span>0%</span><span>0</span></td>
+								</tr>
+								<tr>
+									<td>差评<img src="img/star1.gif" alt="" /></td>
+									<td><div></div></td>
+									<td><span>0%</span><span>0</span></td>
+								</tr>
+								<tr></tr>
+							</tbody>
+						</table>
+						<form>
+							<input type="radio" class="radio" name="" id="" value="" checked="checked"/><span>好评</span><img src="img/star3.gif" alt="" />
+							<input type="radio" class="radio"  name="" id="" value="" /><span>中评</span><img src="img/star2.gif" alt="" />
+							<input type="radio" class="radio"  name="" id="" value="" /><span>差评</span><img src="img/star1.gif" alt="" />
+							<textarea></textarea>
+							<input type="image" name="" id="" value="" src="img/submit.gif" class="margin_top"/>
+							<input type="checkbox" name="" id="" value="" class="chec"/>
+							<span class="form_span">匿名发表</span>
+							<span class="form_span2"> (内容限5至200字)&nbsp;&nbsp;&nbsp; &nbsp;当前已经输入 <p>0</p> 字 </span>
+						</form>
+					</div>
+				</div>
+				
+			</div>
+			
+		</div>
+		
+		
+		<div class="footer">
+			<div>
+			©2017 广东华联软件科技有限公司 版权所有  技术支持：
+			<a href="https://www.3566t.com/">商路通</a> 
+				访问量:11272  
+			<a href="https://www.3566t.com/member/">管理入口</a> 
+			</div>
+		</div>
+		
+	</body>
+</html>

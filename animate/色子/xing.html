@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <style>
+        	*{
+        		margin: 0px;
+        		padding: 0px;
+        		list-style: none;
+
+        	}
+
+            body{
+                position: relative;
+                background: url('images/beijin.jpg') no-repeat;
+                background-size: 100%;
+                position: relative;
+            }
+            .nav_p{
+                position: absolute;
+                color: red;
+                font-size: 18px;
+                font-weight: bold;
+                top: 500px;
+                left: 660px;
+            }
+            
+
+        	ul{
+                position: absolute;
+                left: 750px;
+                top: 450px;
+        		width: 100px;
+        		height: 100px;
+        		position: relative;
+                -webkit-transform-style:preserve-3d;
+                -moz-transform-style:preserve-3d;
+                z-index: 2;
+        	}
+        	ul li{
+        		width: 100px;
+        		height: 100px;
+        		float:left;
+        		position: absolute;
+        		left: 0px;
+        		top: 0px;
+                -webkit-transform-style:preserve-3d;
+                -moz-transform-style:preserve-3d; 
+        	}
+            img{
+                width: 100%;
+                height: 100%;
+            }
+
+
+   /* 所有色子的六面排布 */
+        	li:nth-of-type(1){
+                -webkit-transform: rotateY(-90deg) translateZ(50px);
+				-moz-transform: rotateY(-90deg) translateZ(50px);
+
+        	}
+
+        	li:nth-of-type(2){
+                -webkit-transform: rotateY(90deg) translateZ(50px);
+        		-moz-transform: rotateY(90deg) translateZ(50px);
+
+        	}
+        	li:nth-of-type(3){
+                -webkit-transform: rotateX(-90deg) translateZ(50px);
+        		-moz-transform: rotateX(-90deg) translateZ(50px);
+
+        	}
+        	li:nth-of-type(4){
+                -webkit-transform: rotateX(90deg) translateZ(50px);
+        		-moz-transform: rotateX(90deg) translateZ(50px);
+
+        	}
+        	li:nth-of-type(5){
+                -webkit-transform: rotateZ(-90deg) translateZ(50px);
+        		-moz-transform: rotateZ(-90deg) translateZ(50px);
+
+        	}
+        	li:nth-of-type(6){
+                -webkit-transform: rotateZ(-180deg) translateZ(50px);
+        		-moz-transform: rotateZ(-180deg) translateZ(50px);
+
+        	} 
+
+
+
+
+            ul:hover{
+                animation:wa 8s linear infinite; 
+            }
+   
+
+            @keyframes wa{
+                0%{
+                    transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+                }
+                100%{
+                    transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg);
+                }
+            }
+            
+                
+
+                
+                div{
+                    width: 100%;
+                    height: 100%;
+                    position: relative;
+                }
+
+           ol{
+                 width: 100px;
+                 height: 100px;
+                  -webkit-transform-style:preserve-3d;
+                 -moz-transform-style:preserve-3d;
+                 display: none;
+            }
+            ol li{
+                width: 100px;
+                height: 100px;
+                float:left;
+                position: absolute;
+                left: 0px;
+                top: 0px;
+                -webkit-transform-style:preserve-3d;
+                -moz-transform-style:preserve-3d; 
+            }
+
+
+
+
+
+
+
+      /* 周围色子定位； */
+     /*  色子nth-of-type()值根据挂钟点数排； */
+                div ol:nth-of-type(1){
+                position: absolute;
+                left: 940px;
+                top: 100px;
+                -webkit-transform-style:preserve-3d;
+                -moz-transform-style:preserve-3d;
+                display: block;
+                }
+/*                 div ol:nth-of-type(1){
+                     animation:wa 8s linear infinite; 
+                } */
+
+                 div ol:nth-of-type(2){
+                 position: absolute;
+                left: 1100px;
+                top: 210px;
+                -webkit-transform-style:preserve-3d;
+                -moz-transform-style:preserve-3d;
+                display: block;
+
+                }
+/*                  div ol:nth-of-type(2){
+                     animation:wa 8s linear infinite; 
+                } */
+
+
+
+                 div ol:nth-of-type(3){
+                  position: absolute;
+                left: 1250px;
+                top: 350px;
+                -webkit-transform-style:preserve-3d;
+                -moz-transform-style:preserve-3d;
+                display: block;
+                }
+/*                  div ol:nth-of-type(3){
+                     animation:wa 8s linear infinite; 
+                }
+ */
+
+
+                 div ol:nth-of-type(4){
+                  position: absolute;
+                left: 1114px;
+                top: 490px;
+                -webkit-transform-style:preserve-3d;
+                -moz-transform-style:preserve-3d;
+                display: block;
+                }
+/*                  div ol:nth-of-type(4){
+                     animation:wa 8s linear infinite; 
+                } */
+
+
+                 div ol:nth-of-type(5){
+                 position: absolute;
+                left: 948px;
+                top: 600px;
+                -webkit-transform-style:preserve-3d;
+                -moz-transform-style:preserve-3d;
+                display: block;
+                }
+/*                  div ol:nth-of-type(5){
+                     animation:wa 8s linear infinite; 
+                } */
+
+
+                 div ol:nth-of-type(6){
+                 position: absolute;
+                left: 750px;
+                top: 700px;
+                -webkit-transform-style:preserve-3d;
+                -moz-transform-style:preserve-3d;
+                display: block;
+                }
+ /*                 div ol:nth-of-type(6){
+                     animation:wa 8s linear infinite; 
+                } */
+
+
+                 div ol:nth-of-type(7){
+                 position: absolute;
+                left: 570px;
+                top: 630px;
+                -webkit-transform-style:preserve-3d;
+                -moz-transform-style:preserve-3d;
+                display: block;
+                }
+/*                  div ol:nth-of-type(7){
+                     animation:wa 8s linear infinite; 
+                } */
+
+
+                 div ol:nth-of-type(8){
+                 position: absolute;
+                left: 410px;
+                top: 520px;
+                -webkit-transform-style:preserve-3d;
+                -moz-transform-style:preserve-3d;
+                display: block;
+                }
+/*                  div ol:nth-of-type(8){
+                     animation:wa 8s linear infinite; 
+                } */
+
+
+
+                 div ol:nth-of-type(9){
+                 position: absolute;
+                left: 250px;
+                top: 350px;
+                -webkit-transform-style:preserve-3d;
+                -moz-transform-style:preserve-3d;
+                display: block;
+                }
+
+/*                  div ol:nth-of-type(9){
+                     animation:wa 8s linear infinite; 
+                } */
+
+
+                  div ol:nth-of-type(10){
+                 position: absolute;
+                left: 380px;
+                top: 200px;
+                -webkit-transform-style:preserve-3d;
+                -moz-transform-style:preserve-3d;
+                display: block;
+                }
+/*                  div ol:nth-of-type(10){
+                     animation:wa 8s linear infinite; 
+                } */
+
+
+
+                div ol:nth-of-type(11){
+                 position: absolute;
+                left: 540px;
+                top: 90px;
+                -webkit-transform-style:preserve-3d;
+                -moz-transform-style:preserve-3d;
+                display: block;
+                }
+/*                  div ol:nth-of-type(11){
+                     animation:wa 8s linear infinite; 
+                } */
+
+
+
+                div ol:nth-of-type(12){
+                 position: absolute;
+                left: 750px;
+                -webkit-transform-style:preserve-3d;
+                -moz-transform-style:preserve-3d;
+                top: 10px;
+                display: block;
+                }
+/*                  div ol:nth-of-type(12){
+                     animation:wa 8s linear infinite; 
+                } */
+
+
+
+
+         /*  待要添加的类名 */
+                     div .ol{
+                     animation:wa 2s linear infinite; 
+                }
+
+            
+        </style>
+        <script src="jquery-1.11.1.js"></script>
+        <script>
+        $(function(){
+
+            var a=0;
+
+            $('ul').click(function(event) {
+                /* Act on the event */
+                
+                a++;
+                if(a>12)
+                    a=1;
+
+                    $('div ol:nth-of-type('+a+')').addClass('ol').siblings('ol').removeClass('ol');
+
+            });
+        })
+        </script>
+    </head>
+    <body>
+
+
+    <!-- ul是中间色子，点击的事件源； -->
+          <ul>
+        <li><img src="images/1.png" alt=""></li>
+        <li><img src="images/2.png" alt=""></li>
+        <li><img src="images/3.png" alt=""></li>
+        <li><img src="images/4.png" alt=""></li>
+        <li><img src="images/5.png" alt=""></li>
+        <li><img src="images/6.png" alt=""></li>
+    </ul>
+
+
+
+
+
+
+       <!--  ol是外面的需要变化的色子： -->
+<div>
+        <ol >
+            <li><img src="images/1.png" alt=""></li>
+            <li><img src="images/2.png" alt=""></li>
+            <li><img src="images/3.png" alt=""></li>
+            <li><img src="images/4.png" alt=""></li>
+            <li><img src="images/5.png" alt=""></li>
+            <li><img src="images/6.png" alt=""></li>
+        </ol>
+        <ol>
+            <li><img src="images/1.png" alt=""></li>
+            <li><img src="images/2.png" alt=""></li>
+            <li><img src="images/3.png" alt=""></li>
+            <li><img src="images/4.png" alt=""></li>
+            <li><img src="images/5.png" alt=""></li>
+            <li><img src="images/6.png" alt=""></li>
+        </ol>
+        <ol>
+            <li><img src="images/1.png" alt=""></li>
+            <li><img src="images/2.png" alt=""></li>
+            <li><img src="images/3.png" alt=""></li>
+            <li><img src="images/4.png" alt=""></li>
+            <li><img src="images/5.png" alt=""></li>
+            <li><img src="images/6.png" alt=""></li>
+        </ol>
+        <ol>
+            <li><img src="images/1.png" alt=""></li>
+            <li><img src="images/2.png" alt=""></li>
+            <li><img src="images/3.png" alt=""></li>
+            <li><img src="images/4.png" alt=""></li>
+            <li><img src="images/5.png" alt=""></li>
+            <li><img src="images/6.png" alt=""></li>
+        </ol>
+        <ol>
+            <li><img src="images/1.png" alt=""></li>
+            <li><img src="images/2.png" alt=""></li>
+            <li><img src="images/3.png" alt=""></li>
+            <li><img src="images/4.png" alt=""></li>
+            <li><img src="images/5.png" alt=""></li>
+            <li><img src="images/6.png" alt=""></li>
+        </ol>
+        <ol>
+            <li><img src="images/1.png" alt=""></li>
+            <li><img src="images/2.png" alt=""></li>
+            <li><img src="images/3.png" alt=""></li>
+            <li><img src="images/4.png" alt=""></li>
+            <li><img src="images/5.png" alt=""></li>
+            <li><img src="images/6.png" alt=""></li>
+        </ol>
+        <ol>
+            <li><img src="images/1.png" alt=""></li>
+            <li><img src="images/2.png" alt=""></li>
+            <li><img src="images/3.png" alt=""></li>
+            <li><img src="images/4.png" alt=""></li>
+            <li><img src="images/5.png" alt=""></li>
+            <li><img src="images/6.png" alt=""></li>
+        </ol>
+        <ol>
+            <li><img src="images/1.png" alt=""></li>
+            <li><img src="images/2.png" alt=""></li>
+            <li><img src="images/3.png" alt=""></li>
+            <li><img src="images/4.png" alt=""></li>
+            <li><img src="images/5.png" alt=""></li>
+            <li><img src="images/6.png" alt=""></li>
+        </ol>
+        <ol>
+            <li><img src="images/1.png" alt=""></li>
+            <li><img src="images/2.png" alt=""></li>
+            <li><img src="images/3.png" alt=""></li>
+            <li><img src="images/4.png" alt=""></li>
+            <li><img src="images/5.png" alt=""></li>
+            <li><img src="images/6.png" alt=""></li>
+        </ol>
+        <ol>
+            <li><img src="images/1.png" alt=""></li>
+            <li><img src="images/2.png" alt=""></li>
+            <li><img src="images/3.png" alt=""></li>
+            <li><img src="images/4.png" alt=""></li>
+            <li><img src="images/5.png" alt=""></li>
+            <li><img src="images/6.png" alt=""></li>
+        </ol>
+        <ol>
+            <li><img src="images/1.png" alt=""></li>
+            <li><img src="images/2.png" alt=""></li>
+            <li><img src="images/3.png" alt=""></li>
+            <li><img src="images/4.png" alt=""></li>
+            <li><img src="images/5.png" alt=""></li>
+            <li><img src="images/6.png" alt=""></li>
+        </ol>
+        <ol>
+            <li><img src="images/1.png" alt=""></li>
+            <li><img src="images/2.png" alt=""></li>
+            <li><img src="images/3.png" alt=""></li>
+            <li><img src="images/4.png" alt=""></li>
+            <li><img src="images/5.png" alt=""></li>
+            <li><img src="images/6.png" alt=""></li>
+        </ol>
+
+</div>
+
+<p class="nav_p">点击我</p>
+
+
+ <!--    <audio src="../mp3/Sleep Away.mp3"></audio> -->
+    </body>
+</html>

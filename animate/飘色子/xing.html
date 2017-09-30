@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <style>
+
+        	*{
+        		margin: 0px;
+        		padding: 0px;
+        		list-style: none;
+
+        	}
+            html{
+                width: 100%;
+                height: 100%;
+            }
+        body{
+            background: url('images/bai2.jpg') no-repeat;
+            background-size:110%;
+            overflow: hidden;
+        }
+         div{
+                    width: 1600px;
+                    height: 900px;
+                    position: relative;
+                }
+
+           div ol{
+                 width: 100px;
+                 height: 100px;
+                 -webkit-transform-style:preserve-3d; 
+                -moz-transform-style:preserve-3d; 
+                 position: relative;
+            }
+
+            ol li{
+                float: left;
+                width: 100px;
+                height: 100px;
+                position: absolute;
+                top: 0px;
+                left: 0px;
+            }
+             ol li img{
+                width: 100%;
+                height:100%;
+            }
+
+   
+
+            @keyframes wa{
+                0%{
+                    transform: translate(0px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg)  ;
+                }
+                 50%{
+                    transform: translate(0px, 300px) rotateX(360deg) rotateY(360deg) rotateZ(360deg) ;
+                }
+                100%{
+                    transform: translate(0px, 0px)  rotateX(720deg) rotateY(720deg) rotateZ(720deg) ;
+                }
+             
+            }
+            
+
+
+                ol li:nth-of-type(1){
+                        transform: rotateY(90deg) translateZ(50px);
+                        -webkit-transform-style:preserve-3d; 
+                        -moz-transform-style:preserve-3d; 
+                }                  
+                 ol li:nth-of-type(2){
+                        transform: rotateY(-90deg) translateZ(50px);
+                        -webkit-transform-style:preserve-3d; 
+                        -moz-transform-style:preserve-3d; 
+                }
+                  ol li:nth-of-type(3){
+                        transform: rotateX(90deg) translateZ(50px);
+                        -webkit-transform-style:preserve-3d; 
+                        -moz-transform-style:preserve-3d; 
+                }
+                  ol li:nth-of-type(4){
+                        transform: rotateX(-90deg) translateZ(50px);
+                        -webkit-transform-style:preserve-3d; 
+                        -moz-transform-style:preserve-3d; 
+                }
+                  ol li:nth-of-type(5){
+                        transform: rotateX(0deg) translateZ(50px);
+                        -webkit-transform-style:preserve-3d; 
+                        -moz-transform-style:preserve-3d; 
+                }
+                  ol li:nth-of-type(6){
+                        transform: rotateX(180deg) translateZ(50px);
+                        -webkit-transform-style:preserve-3d; 
+                        -moz-transform-style:preserve-3d; 
+                }
+
+
+
+
+
+                div ol:nth-of-type(1){
+                position: absolute;
+                left: 200px;
+                top: 0px;
+                -webkit-transform-style:preserve-3d; 
+                -moz-transform-style:preserve-3d;
+                 animation: wa 3s linear infinite; 
+
+                }
+
+
+                 div ol:nth-of-type(2){
+                 position: absolute;
+                left: 500px;
+                top: 0px;
+                -webkit-transform-style:preserve-3d; 
+                -moz-transform-style:preserve-3d;
+                animation: wa 5s linear infinite; 
+
+                }
+
+
+
+
+                 div ol:nth-of-type(3){
+                  position: absolute;
+                left: 750px;
+                top: 0px;
+                -webkit-transform-style:preserve-3d; 
+                -moz-transform-style:preserve-3d;
+                 animation: wa 4s linear infinite; 
+                }
+
+
+
+                 div ol:nth-of-type(4){
+                  position: absolute;
+                left: 950px;
+                top: 0px;
+                -webkit-transform-style:preserve-3d; 
+                -moz-transform-style:preserve-3d;
+                 animation: wa 3s linear infinite; 
+                }
+                
+
+hr{
+    position: absolute;
+    top: 420px;
+    left: 0px;
+    width: 100%;
+    size: 6px;
+    color: #000;
+    opacity: 1;
+}
+
+
+
+  div ol:nth-of-type(5){
+                position: absolute;
+                left: 200px;
+                top: 450px;
+                -webkit-transform-style:preserve-3d; 
+                -moz-transform-style:preserve-3d;
+                 animation: ni 3s linear infinite; 
+
+                }
+   div ol:nth-of-type(6){
+                 position: absolute;
+                left: 500px;
+                top: 450px;
+                -webkit-transform-style:preserve-3d; 
+                -moz-transform-style:preserve-3d;
+                animation: ni 5s linear infinite; 
+                }
+
+   div ol:nth-of-type(7){
+                  position: absolute;
+                left: 750px;
+                top: 450px;
+                -webkit-transform-style:preserve-3d; 
+                -moz-transform-style:preserve-3d;
+                 animation: ni 4s linear infinite; 
+                }
+
+    div ol:nth-of-type(8){
+                  position: absolute;
+                left: 950px;
+                top: 450px;
+                -webkit-transform-style:preserve-3d; 
+                -moz-transform-style:preserve-3d;
+                 animation: ni 3s linear infinite; 
+                }
+
+
+                @keyframes ni{
+                    0%{
+                        /* opacity: 0; */
+                        transform: scale(0.7) rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+                    }
+                    50%{
+                        /* opacity: 0.3; */
+                        transform: scale(1) rotateX(360deg) rotateY(360deg) rotateZ(360deg);
+                    }
+                    100%{
+                        /* opacity: 0; */
+                        transform: scale(0.7) rotateX(720deg) rotateY(720deg) rotateZ(720deg);
+                    }
+                }
+
+                    @keyframes ha{
+                        0%{
+                            opacity: 0; 
+                        }
+                        50%{
+                            opacity: 0.2; 
+                        }
+                        100%{
+                            opacity: 0; 
+                        }
+                    }
+            
+                div ol:nth-of-type(5) li{
+                    animation: ha 3s linear infinite;
+                }
+                 div ol:nth-of-type(6) li{
+                    animation: ha 5s linear infinite;
+                }
+                 div ol:nth-of-type(7) li{
+                    animation: ha 4s linear infinite;
+                }
+                 div ol:nth-of-type(8) li{
+                    animation: ha 3s linear infinite;
+                }
+
+
+
+        </style>
+        <script src="../jquery-1.11.1.js"></script>
+        <script>
+
+        </script>
+    </head>
+    <body>
+
+
+
+<div>
+        <ol>
+            <li><img src="images/6.png" alt=""></li>
+            <li><img src="images/2.png" alt=""></li>
+            <li><img src="images/1.png" alt=""></li>
+            <li><img src="images/4.png" alt=""></li>
+            <li><img src="images/5.png" alt=""></li>
+            <li><img src="images/3.png" alt=""></li>
+        </ol>
+        <ol>
+            <li><img src="images/1.png" alt=""></li>
+            <li><img src="images/2.png" alt=""></li>
+            <li><img src="images/4.png" alt=""></li>
+            <li><img src="images/3.png" alt=""></li>
+            <li><img src="images/5.png" alt=""></li>
+            <li><img src="images/6.png" alt=""></li>
+        </ol>
+        <ol>
+            <li><img src="images/1.png" alt=""></li>
+            <li><img src="images/2.png" alt=""></li>
+            <li><img src="images/6.png" alt=""></li>
+            <li><img src="images/4.png" alt=""></li>
+            <li><img src="images/5.png" alt=""></li>
+            <li><img src="images/3.png" alt=""></li>
+        </ol>
+        <ol>
+            <li><img src="images/5.png" alt=""></li>
+            <li><img src="images/6.png" alt=""></li>
+            <li><img src="images/3.png" alt=""></li>
+            <li><img src="images/4.png" alt=""></li>
+            <li><img src="images/6.png" alt=""></li>
+            <li><img src="images/2.png" alt=""></li>
+        </ol>
+
+<hr>
+
+ <ol>
+            <li><img src="images/a6.png" alt=""></li>
+            <li><img src="images/a2.png" alt=""></li>
+            <li><img src="images/a1.png" alt=""></li>
+            <li><img src="images/a4.png" alt=""></li>
+            <li><img src="images/a5.png" alt=""></li>
+            <li><img src="images/a3.png" alt=""></li>
+        </ol>
+        <ol>
+            <li><img src="images/a1.png" alt=""></li>
+            <li><img src="images/a2.png" alt=""></li>
+            <li><img src="images/a4.png" alt=""></li>
+            <li><img src="images/a3.png" alt=""></li>
+            <li><img src="images/a5.png" alt=""></li>
+            <li><img src="images/a6.png" alt=""></li>
+        </ol>
+        <ol>
+            <li><img src="images/a1.png" alt=""></li>
+            <li><img src="images/a2.png" alt=""></li>
+            <li><img src="images/a6.png" alt=""></li>
+            <li><img src="images/a4.png" alt=""></li>
+            <li><img src="images/a5.png" alt=""></li>
+            <li><img src="images/a3.png" alt=""></li>
+        </ol>
+        <ol>
+            <li><img src="images/a5.png" alt=""></li>
+            <li><img src="images/a6.png" alt=""></li>
+            <li><img src="images/a3.png" alt=""></li>
+            <li><img src="images/a4.png" alt=""></li>
+            <li><img src="images/a6.png" alt=""></li>
+            <li><img src="images/a2.png" alt=""></li>
+        </ol>
+</div>
+
+                
+
+    </body>
+</html>

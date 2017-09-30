@@ -1,0 +1,28 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	padding-top: 50px;
+}
+li{
+	list-style: none !important;
+}
+.item{
+	height: 30vw;
+	overflow: hidden;
+}
+#xiazai{
+	margin: 40px 0;
+}
+.zouni{
+	padding-top: 200px;
+}
+.fhdb{
+	position: fixed;
+	right: 10px;
+	bottom: 10px;
+}
+.tab-pane .col-md-5 img{
+	width: 100%;
+}

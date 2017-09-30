@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<link rel="stylesheet" type="text/css" href="css/2 5 7.css"/>
+		<link rel="stylesheet" href="css/contact.css" />
+		<title></title>
+		<script type="text/javascript">
+			window.onload=function(){
+	var clicka = document.getElementById("li_a");
+	var nonea = document.getElementsByClassName("header_fixde")[0];
+	var fixed_p = document.getElementById("fixed_p");
+	var oTime = document.getElementById("time");
+	var ps = oTime.getElementsByTagName("p");
+
+	clicka.onclick = function() {
+		nonea.style.display = "block";
+	}
+	fixed_p.onclick = function() {
+		nonea.style.display = "none";
+	}
+
+	//时间
+	var time = new Date();
+	var Month = time.getMonth() + 1;
+	var da = time.getDate();
+	var xin = da % 7 - 3;
+	ps[0].innerText = Month;
+	ps[1].innerText = da;
+	ps[2].innerText = "星期" + xin;
+
+
+
+
+	var box = document.getElementsByClassName("form_box")[0];
+	var clicks = document.getElementsByClassName("clicks")[0];
+	var str = "0123456789qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM";
+	var col = ["#e4fae3", "#d8fcef", "#dfe9ca", "#e5dad8", "#cdfeeb", "#f7e4de", "#defad1", "#d2f3dc", "#c8f2de"]
+	var colo = ["#02620e", "#2e1438", "#273765", "#1c2d02", "#411057", "#5b6569", "#0d1518", "#073e30", "#320b3c"]
+	clicks.onclick = function() {
+		box.style.display = "block";
+		this.placeholder = "请输入";
+	}
+	box.onclick = function() {
+		box.innerText = " ";
+		for(var i = 0; i < 4; i++) {
+			var a = Math.floor(Math.random() * 62);
+			box.innerText += str[a];
+		}
+		var b = Math.round(Math.random() * 9);
+		box.style.backgroundColor = col[b];
+		box.style.color = colo[b];
+	}
+			}
+	
+		</script>
+	</head>
+	<body>
+		<div class="header">
+			<ul>
+				<li>欢迎来到商路通</li>
+				<li>请登录</li>
+				<li>免费注册</li>
+				<li>忘记密码</li>
+			</ul>
+			
+			<ol>
+				<li><a href="">进货单(<span class="red">0</span>)</a></li>
+				<li><a href="JavaScript:;" id="li_a">二维码</a></li>
+				<li><a href="">手机版</a></li>
+			</ol>
+		</div>
+		<div class="header_fixde"><img src="img/display.JPG"/><p id="fixed_p">x</p></div>
+		<div class="top">
+			<div class="top_center">
+				<div>
+					<h2>广东华联软件科技有限公司</h2>
+					<p>工程造价软件，工程预算软件，建材信息查询，工程造价指标，项目商机</p>
+					<img src="img/free_bg.gif"/>
+				</div>
+				<ul>
+					<li><a href="index1.html">网站首页</a></li>
+					<li><a href="introduce2.html" >公司介绍</a></li>
+					<li><a href="product3.html">供应产品</a></li>
+					<li><a href="purchase4.html">采购清单</a></li>
+					<li><a href="news5.html">新闻中心</a></li>
+					<li><a href="honor6.html" >荣誉资质</a></li>
+					<li><a href="javascript" class="active">联系方式</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="wrap">
+			<ul class="wrap_heder">
+				<li><a href=""><img src="img/banner1.jpg"/><p>人力资源管理师</p></a></li>
+				<li><a href=""><img src="img/banner2.jpg"/><p>咽喉炎</p></a></li>
+				<li><a href=""><img src="img/banner3.jpg"/><p>IT培训</p></a></li>
+				<li><a href=""><img src="img/banner4.jpg"/><p>微型摄像机价格</p></a></li>
+				<li><a href=""><img src="img/banner5.jpg"/><p>双证在职研究生</p></a></li>
+				<li><a href=""><img src="img/banner6.jpg"/><p>真实的达内</p></a></li>
+				<li><a href=""><img src="img/banner7.jpg"/><p>电话销售外包</p></a></li>
+				<li><a href=""><img src="img/banner8.jpg"/><p>小项目外包</p></a></li>
+			</ul>
+			<img src="img/icon.png" alt="" class="icon"/>
+			<div class="wrap_top">
+				<img src="img/icon14.gif"/>
+				<span>您当前位置:<a href="javascript:;">首页</a>>>联系方式</span>
+				<span id="time">今天是<p></p>月<p></p>日 <p></p></span>
+			</div>
+			<div class="wrap_left">
+				<div>
+					<div><a href="#"><img src="img/banner6.jpg"/><p>真实的达内</p></a></div>
+					<div><a href="#"><img src="img/banner12.png"/><p>餐饮收银软件</p></a></div>
+				</div>
+				<div>
+					<div><a href=""><img src="img/banner6.jpg"/><p>达内的</p></a></div>
+					<div><a href=""><img src="img/banner11.jpg" alt="" /><p>真实的达内</p></a></div>
+				</div>
+			</div>
+			
+			<div class="wrap_right">
+				<div class="right_top">
+					<span class="top_span">
+						<h3>公司介绍</h3>
+					</span>
+					<ul>
+						<li>公司名称:<span>广东华联软件科技有限公司</span></li>
+						<li>公司地址:<span>广东省广州市越秀区盘福路医国后街1号大院自编1号6-8层</span></li>
+						<li>所在地区:<span>广东/广州市</span></li>
+						<li>公司电话:<span>400-020-1168</span></li>
+						<li>电子邮件:<span>service@cost168.com</span></li>
+						<li><div>公司网址:</div><div><a href="http://www.cost168.com" target="_blank">http://www.cost168.com</a><br/><a href="https://cost168.3566t.com/" target="_blank">https://cost168.3566t.com/</a></div></li>
+						<li>联系人:<span>&nbsp;&nbsp;&nbsp;168客服 （先生）</span></li>
+						<li>手机号码:<span>400-020-1168</span></li>
+						<li>即时通信:<a href="https://www.3566t.com/member/chat.php?touser=cost168" target="_blank"><img src="img/minicon.gif" alt="" /></a></li>
+						<li>在线状态:<span>当前离线</span></li>
+					</ul>
+				</div>
+				<div class="right_content">
+					<span class="top_span">
+						<h3>公司介绍</h3>
+					</span>
+					<form >
+						<span>主题</span>&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="" id="" value="" /><br />
+						<span>内容</span>&nbsp;&nbsp;&nbsp;&nbsp;<textarea></textarea><br />
+						<span>公司名</span>&nbsp;&nbsp;&nbsp;<input type="text" name="" id="" value="" /><br />
+						<span>联系人</span>&nbsp;&nbsp;<input type="text" name="" id="" value="" /><br />
+						<span>联系电话</span><input type="text" name="" id="" value="" /><br />
+						<span>电子邮箱</span><input type="text" name="" id="" value="" /><br />
+						<span>QQ</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="" id="" value="" /><br />
+						<span>验证码</span>&nbsp;&nbsp;&nbsp;<input type="text"value="" class="clicks" placeholder="点击显示"/><div class="form_box">8456</div><br />
+						<input type="submit" value="确定"/><input type="reset" value="重写"/>
+					</form>
+				</div>
+			</div>
+			
+			
+		</div>
+		<div class="footer">
+			<div>
+			©2017 广东华联软件科技有限公司 版权所有  技术支持：
+			<a href="https://www.3566t.com/">商路通</a> 
+				访问量:11272  
+			<a href="https://www.3566t.com/member/">管理入口</a> 
+			</div>
+			
+		</div>
+		
+	</body>
+</html>

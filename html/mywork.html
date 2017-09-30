@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="../css/header.css">
+        <link rel="stylesheet" href="../css/banner.css">
+        <link rel="stylesheet" href="../css/footer.css">
+        <link rel="stylesheet" href="../css/mywork.css">
+        <link rel="stylesheet" href="../css/hover-min.css" />
+        <script src="../js/jquery-1.11.1.js"></script>
+        <script src="../js/baner.js"></script>
+        <script>
+       $(function(){
+
+
+	    	//旋转添加移除类名
+	    $('.wrap .hover').hover(function() {
+	    	$(this).children('ul').removeClass('no');
+	    	$(this).children('img').css('display', 'block');
+	    }, function() {
+	    	$(this).children('ul').addClass('no');
+	    	$(this).children('img').css('display', 'none');
+	    });
+
+
+	  
+	    	//点击旋转事件
+	    function zuo1(){
+	    	$('.wrap .hover ul').css('transform', 'rotateY(45deg)');
+	    }
+	    function zuo2(){
+	    	$('.wrap .hover ul').css('transform', 'rotateY(90deg)');
+	    }
+	    function zuo3(){
+	    	$('.wrap .hover ul').css('transform', 'rotateY(135deg)');
+	    }
+	    function zuo4(){
+	    	$('.wrap .hover ul').css('transform', 'rotateY(180deg)');
+	    }
+	    function zuo5(){
+	    	$('.wrap .hover ul').css('transform', 'rotateY(225deg)');
+	    }
+	    function zuo6(){
+	    	$('.wrap .hover ul').css('transform', 'rotateY(270deg)');
+	    }
+	    function zuo7(){
+	    	$('.wrap .hover ul').css('transform', 'rotateY(315deg)');
+	    }
+	    function zuo8(){
+	    	$('.wrap .hover ul').css('transform', 'rotateY(360deg)');
+	    }
+	    
+
+	      var a=8;
+
+	      $('.hover .lunbo').click(function(event) {
+	      	a-=1;
+	      	if(a<1){
+	      		a=8;
+	      	}
+
+
+
+	      	if(a==1){
+	    		zuo1();
+	    	}else if(a==2){
+	    		zuo2();
+	    	}
+	    	else if(a==3){
+	    		zuo3();
+	    	}
+	    	else if(a==4){
+	    		zuo4();
+	    	}
+	    	else if(a==5){
+	    		zuo5();
+	    	}
+	    	else if(a==6){
+	    		zuo6();
+	    	}
+	    	else if(a==7){
+	    		zuo7();
+	    	}
+	    	else if(a==8){
+	    		zuo8();
+	    	}
+
+	      });
+
+
+
+	      $('.hover .lunbo2').click(function(event) {
+	      	a+=1;
+	      	if(a>8){
+	      		a=1;
+	      	}
+
+
+	      	if(a==1){
+	    		zuo1();
+	    	}else if(a==2){
+	    		zuo2();
+	    	}
+	    	else if(a==3){
+	    		zuo3();
+	    	}
+	    	else if(a==4){
+	    		zuo4();
+	    	}
+	    	else if(a==5){
+	    		zuo5();
+	    	}
+	    	else if(a==6){
+	    		zuo6();
+	    	}
+	    	else if(a==7){
+	    		zuo7();
+	    	}
+	    	else if(a==8){
+	    		zuo8();
+	    	}
+
+	      });
+
+
+	      //鼠标移入li事件
+	      $('.hover ul li').hover(function() {
+	      	$(this).children('a').children('p').stop().fadeOut(500);
+	      	$(this).children('a').children('img').css('transform', 'scale(1.1)');
+	      }, function() {
+	      	$(this).children('a').children('p').stop().fadeIn(500);
+	      	$(this).children('a').children('img').css('transform', 'scale(1)');
+	      });
+
+
+
+})
+        </script>
+    </head>
+    <body>
+    <div class="header">
+    <img src="../images/logo.png" alt="" class="logo">
+    	<ul>
+    		<li><a href="index.html" class="hvr-float-shadow" >首页</a></li>
+    		<li><a href="animate.html" class="hvr-float-shadow">动画之家</a></li>
+    		<li><a href="mywork.html" class="header_lei">我的作品</a></li>
+    		<li><a href="introduction.html" class="hvr-float-shadow">个人介绍</a></li>
+    		<li><a href="college.html" class="hvr-float-shadow">大学生活</a></li>
+    	</ul>
+    </div>
+
+
+
+
+
+
+
+		<div class="banner">
+    	<ul>
+    		<li class="banner_lei">
+    		<a href="index.html">
+    		<img src="../images/banner1a.png" alt="">
+    		<span class="banner_li_span">欢迎进入一个美丽的网站</span>
+    		</a>
+    		</li>
+
+    		<li>
+    		<a href="animate.html">
+    		<img src="../images/banner2a.png" alt="">
+    		<span class="banner_li_span">欢迎进入我的动画之家</span>
+    		</a>
+    		</li>
+
+    		<li>
+    		<a href="mywork.html">
+    		<img src="../images/banner3a.png" alt="">
+    		<span class="banner_li_span">生活是创作的灵感</span>
+    		</a>
+    		</li>
+
+    		<li>
+    		<a href="introduction.html">
+    		<img src="../images/banner4a.png" alt="">
+    		<span class="banner_li_span">展示自己，别人才有可能看到你</span>
+    		</a>
+    		</li>
+
+    		<li>
+    		<a href="college.html">
+    		<img src="../images/banner5a.png" alt="">
+    		<span class="banner_li_span">青春洋溢的大学</span>
+    		</a>
+    		</li>
+    	</ul>
+			
+			<ol>
+				<li><p></p></li>
+				<li><p></p></li>
+				<li><p></p></li>
+				<li><p></p></li>
+				<li><p></p></li>
+			</ol>
+
+			<span><img src="../images/zuo.png" alt=""></span>
+			<span><img src="../images/you.png" alt=""></span>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <span class="nav_span">您当前位置:&nbsp;&nbsp;&nbsp;<a href="">我的作品</a></span>
+
+
+		<div class="wrap">
+		<div class="hover">
+			<ul class="no">
+				<li>
+				<a href="../mywork/千寻浏览器/html/index.html" target="_blank">
+					<img src="../images/qianxun.JPG" alt="">
+					<p>千寻浏览器</p>
+				</a>
+				</li>
+				<li>
+					<a href="../mywork/妆点尚品洪占定/html/index.html" target="_blank">
+					<img src="../images/zhuandian.JPG" alt="">
+					<p>妆点尚品</p>
+				</a>
+				</li>
+				<li>
+					<a href="../mywork/tanren2/index.html" target="_blank">
+					<img src="../images/tairen.JPG" alt="">
+					<p>泰然农业</p>
+				</a>
+				</li>
+				<li>
+					<a href="../mywork/视觉差网页/新/xing.html" target="_blank">
+					<img src="../images/shijuecha.JPG" alt="">
+					<p>视觉差效果</p>
+				</a>
+				</li>
+				<li>
+					<a href="../mywork/hualian/index1.html" target="_blank">
+					<img src="../images/hualian.JPG" alt="">
+					<p>广东华联软件科技有限公司</p>
+				</a>
+				</li>
+				<li>
+					<a href="../mywork/作品/index.html" target="_blank">
+					<img src="../images/fullpage.JPG" alt="">
+					<p>fullpage个人信息介绍</p>
+				</a>
+				</li>
+				<li>
+					<a href="../mywork/Bootstrap1/index.html" target="_blank">
+					<img src="../images/Bootstrap.JPG" alt="">
+					<p>Bootstrap响应式案例1</p>
+				</a>
+				</li>
+				<li>
+					<a href="../mywork/Bootstrap2/demo.html" target="_blank">
+					<img src="../images/Bootstrap2.JPG" alt="">
+					<p>Bootstrap响应式案例2</p>
+				</a>
+				</li>
+			</ul>
+
+			<img src="../images/lunbo.png" alt="" class="lunbo">
+			<img src="../images/lunbo2.png" alt="" class="lunbo2">
+			</div>
+
+		</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		<div class="footer">
+			<div class="footer_conter">
+				<img src="../images/erweima.png" alt="" class="conter_left">
+				<div class="conter_right">
+					<ul>
+						<li><a href="index.html">首页</a></li>
+						<li><a href="animate.html">动画之家</a></li>
+						<li><a href="mywork.html">我的作品</a></li>
+						<li><a href="introduction.html">个人介绍</a></li>
+						<li><a href="college.html">大学生活</a></li>
+					</ul>
+					<span><a href="">这是一个美好的个人网站，主人想通过最简单的视角岑呈现给您，如果您仔细浏览，就会发现和了解主人的特点,喜欢打篮球，热爱代码，热爱思考创作，工作细心认真，有责任心，大气的男生,在最后谢谢您的浏览。</a></span>
+					
+				</div>
+			</div>
+			<img src="../images/logo.png" alt="" class="footer_logo">
+		</div>
+
+
+
+    </body>
+</html>

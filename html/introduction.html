@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="../css/header.css">
+        <link rel="stylesheet" href="../css/banner.css">
+        <link rel="stylesheet" href="../css/introduction.css">
+        <link rel="stylesheet" href="../css/footer.css">
+        <link rel="stylesheet" href="../css/hover-min.css" />
+        <script src="../js/jquery-1.11.1.js"></script>
+        <script src="../js/baner.js"></script>
+        <script>
+       $(function(){
+	    //鼠标移入移出变化
+	    $('.top_left ul li').hover(function() {
+	    	$(this).addClass('li_lei').siblings('li').removeClass('li_lei');
+	    }, function() {
+	    	 $('.top_left ul li').removeClass('li_lei');
+	    	 $('.top_left ul li').eq(e).addClass('li_lei');
+
+	    });
+
+
+
+	    //点击换肤
+	    $('.top_left ul li').click(function(event) {
+	    	$(this).addClass('li_lei').siblings('li').removeClass('li_lei');
+	    });
+
+	    	//点击切换布局
+	    	var e=0;
+	    $('.top_left ul li').eq(0).click(function(event) {
+	    		e=$(this).index();
+	    	$('.block1').fadeIn(200);
+	    	$('.block2').fadeOut(0);
+	    	$('.block3').fadeOut(0);
+	    	$('.block4').fadeOut(0);
+	    });
+	    	 $('.top_left ul li').eq(1).click(function(event) {
+	    	 	e=$(this).index();
+	    	$('.block1').fadeOut(0);
+	    	$('.block2').fadeIn(200);
+	    	$('.block3').fadeOut(0);
+	    	$('.block4').fadeOut(0);
+	    });
+	    	 	 $('.top_left ul li').eq(2).click(function(event) {
+	    	 	 	e=$(this).index();
+	    	$('.block1').fadeOut(0);
+	    	$('.block2').fadeOut(0);
+	    	$('.block3').fadeIn(200);
+	    	$('.block4').fadeOut(0);
+	    });
+	    	 	 	 $('.top_left ul li').eq(3).click(function(event) {
+	    	 	 	 	e=$(this).index();
+	    	$('.block1').fadeOut(0);
+	    	$('.block2').fadeOut(0);
+	    	$('.block3').fadeOut(0);
+	    	$('.block4').fadeIn(200);
+	    });
+
+
+
+
+
+
+
+
+
+
+  //旋转添加移除类名
+  $('.xuehua1').removeClass('xueno');
+  $('.center').hover(function() {
+  	$(this).removeClass('no');
+  	$('.xuehua1').addClass('xueno');
+
+  }, function() {
+  	$(this).addClass('no');
+  	$('.xuehua1').removeClass('xueno');
+  });
+
+
+
+
+
+
+
+})
+        </script>
+    </head>
+    <body>
+    <div class="header">
+    <img src="../images/logo.png" alt="" class="logo">
+    	<ul>
+    		<li><a href="index.html" class="hvr-float-shadow" >首页</a></li>
+    		<li><a href="animate.html" class="hvr-float-shadow">动画之家</a></li>
+    		<li><a href="mywork.html" class="hvr-float-shadow">我的作品</a></li>
+    		<li><a href="introduction.html" class="header_lei">个人介绍</a></li>
+    		<li><a href="college.html" class="hvr-float-shadow">大学生活</a></li>
+    	</ul>
+    </div>
+
+
+
+		
+
+		<div class="banner">
+    	<ul>
+    		<li class="banner_lei">
+    		<a href="index.html">
+    		<img src="../images/banner1a.png" alt="">
+    		<span class="banner_li_span">欢迎进入一个美丽的网站</span>
+    		</a>
+    		</li>
+
+    		<li>
+    		<a href="animate.html">
+    		<img src="../images/banner2a.png" alt="">
+    		<span class="banner_li_span">欢迎进入我的动画之家</span>
+    		</a>
+    		</li>
+
+    		<li>
+    		<a href="mywork.html">
+    		<img src="../images/banner3a.png" alt="">
+    		<span class="banner_li_span">生活是创作的灵感</span>
+    		</a>
+    		</li>
+
+    		<li>
+    		<a href="introduction.html">
+    		<img src="../images/banner4a.png" alt="">
+    		<span class="banner_li_span">展示自己，别人才有可能看到你</span>
+    		</a>
+    		</li>
+
+    		<li>
+    		<a href="college.html">
+    		<img src="../images/banner5a.png" alt="">
+    		<span class="banner_li_span">青春洋溢的大学</span>
+    		</a>
+    		</li>
+    	</ul>			
+			<ol>
+				<li><p></p></li>
+				<li><p></p></li>
+				<li><p></p></li>
+				<li><p></p></li>
+				<li><p></p></li>
+			</ol>
+
+			<span><img src="../images/zuo.png" alt=""></span>
+			<span><img src="../images/you.png" alt=""></span>
+          </div>
+
+
+
+			<span class="nav_span">您当前位置:&nbsp;&nbsp;&nbsp;<a href="">个人介绍</a></span>
+
+			<img src="../images/logo.png" alt="" class="nav_logo">
+
+
+			<div class="top">
+
+
+				<div class="top_left">
+				<div class="top_logo ">
+					<div class="fan"></div>
+					<div class="yuan"><img src="../images/important.png" alt=""></div>
+				</div>
+				
+					<ul>
+						<li class="li_lei">基本信息</li>
+						<li>校内实践</li>
+						<li>专业方向</li>
+						<li>加分阐述</li>
+					</ul>
+				</div>
+
+
+
+
+				<div class="top_right">
+					<div>
+						<h1>洪占定</h1>
+						<h3>主修课程：JAVA程序设计，C语言程序设计，HTML5+css3</h3>
+						<h2>求职意向：H5前端开发工程师</h2>
+					</div>
+
+					<div class="right_gon block1">
+						<h3>基本信息</h3>
+						<hr>
+						<ul>
+						    <li>性别：男</li>
+							<li>身高：169cm</li>
+							<li>体重：54kg</li>
+							<li>出生日期：1996年10月23日</li>
+							<li>户口所在地：广东省湛江市</li>
+						</ul>
+						<ul>
+							<li>毕业学校:清远职业技术学院</li>
+							<li>专业：计算机应用技术</li>
+							<li>爱好：打篮球，轮滑，看书</li>
+							<li></li>
+							<li></li>
+						</ul>
+					</div>
+
+
+					 <div class="right_gon block2">
+						<h3>校内实践</h3>
+						<hr>
+						<ul>
+							<li>2015.11 &nbsp;&nbsp;&nbsp; 参加了学院艺术文化节才艺大比拼晚会，担任宣传和组织工作人员</li>
+							<li>2015.11 &nbsp;&nbsp;&nbsp; 长期担任班级素拓委员，定期召开班会，申请，审核班级素拓项目分数</li>
+							<li>2015.11  &nbsp;&nbsp;&nbsp; 参加清职院十四届校运会，担任学院运动员兼学生会信息宣传工作人员。</li>
+							<li>2016.1.1  参加广东省跨年演唱会担任志愿者。</li>
+							<li>2016.5.6 &nbsp;&nbsp;&nbsp;  代表计算机应用技术2班参加信创院班级篮球赛，获得亚军</li>
+							<li>2017.5.1 &nbsp;&nbsp;&nbsp;  代表计算机应用技术2班参加信创院班级篮球赛，获得冠军</li>
+						</ul>
+					</div>
+
+
+					 <div class="right_gon block3">
+						<h3>专业方向</h3>
+						<hr>
+						<span>本人主修计算机编程方向，学习过JAVA，C语言，数据库，主攻MTHL5领域，有一年的H5项目经验，熟练掌握html5,css3,javascript,JQ,可以帮助企业完成外包项目，配合团队做出更好的精品内容,且本人热爱前端开发，对这个行业的前景充满信心，希望可以伴随贵企业一直走下去</span>
+					</div>
+
+
+					<div class="right_gon block4">
+						<h3>加分阐述</h3>
+						<hr>
+						<span>非常感谢您能浏览到本网页，在这里表示衷心的感谢，这个网站的主人是一个及负责人的男生，有丰富的社会工作经验，为人勤奋好学，谦虚礼貌，一定是一个很好的朋友，做事耐心有能力，喜欢团队协作，有很强的集体责任感，一定是一个很好的员工，平时生活下我喜欢打篮球，看书，旅行，内心也驻扎着一个文艺青年的人格，看到这里有没有对我的第一映像加分呢？</span>
+					</div>
+
+
+					
+
+
+				</div>
+
+
+
+
+
+			</div>
+
+
+
+
+
+			<h1 class="nav_h1">个人介绍</h1>
+
+
+
+
+
+		<div class="center no">
+			<img src="../images/don1a.png" alt="" class="don1">
+
+			<img src="../images/don2a.png" alt="" class="don2">
+
+
+			<div class="div div1">
+				<a href="javascript:void(0)" >
+					<img src="../images/shu.png" alt="">
+					<p></p>
+				</a>
+			</div>
+
+			<div class="div div2">
+				<a href="javascript:void(0)" >
+					<img src="../images/yuan5.png" alt="">
+					<p></p>
+				</a>
+			</div>
+
+			<div class="div div3">
+				<a href="javascript:void(0)" >
+					<img src="../images/yuan4.png" alt="">
+					<p></p>
+				</a>
+			</div>
+
+			<div class="div div4">
+				<a href="javascript:void(0)" >
+					<img src="../images/yuan3.png" alt="">
+					<p></p>
+				</a>
+			</div>
+
+			<div class="div div5">
+				<a href="javascript:void(0)" >
+					<img src="../images/yuan2.png" alt="">
+					<p></p>
+				</a>
+			</div>
+
+			<div class="div div6">
+				<a href="javascript:void(0)" >
+					<img src="../images/yuan1.png" alt="">
+					<p></p>
+				</a>
+			</div>
+
+			
+			<img src="../images/xuehua.png" alt="" class="xueno xuehua1">
+			
+		</div>
+
+
+
+
+
+		<a href="http://www.46design.com/" class="h4" target="_blank">更多资料&nbsp;&nbsp;>></a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			<div class="footer">
+			<div class="footer_conter">
+				<img src="../images/erweima.png" alt="" class="conter_left">
+				<div class="conter_right">
+					<ul>
+						<li><a href="index.html">首页</a></li>
+						<li><a href="animate.html">动画之家</a></li>
+						<li><a href="mywork.html">我的作品</a></li>
+						<li><a href="introduction.html">个人介绍</a></li>
+						<li><a href="college.html">大学生活</a></li>
+					</ul>
+					<span><a href="">这是一个美好的个人网站，主人想通过最简单的视角岑呈现给您，如果您仔细浏览，就会发现和了解主人的特点,喜欢打篮球，热爱代码，热爱思考创作，工作细心认真，有责任心，大气的男生,在最后谢谢您的浏览。</a></span>
+					
+				</div>
+			</div>
+			<img src="../images/logo.png" alt="" class="footer_logo">
+		</div>
+
+
+    </body>
+</html>

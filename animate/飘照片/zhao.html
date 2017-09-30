@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <style>
+        	*{
+        		margin: 0px;
+        		padding: 0px;
+        		list-style: none;
+
+        	}
+
+        	body{
+        		background: url('myimage/bei1.jpg') no-repeat;
+        		background-size:100%; 
+        		width: 1800px;
+        		overflow: hidden;
+        	}
+        	ul{
+        		float: left;
+        		margin: 30px;
+        		width: 150px;
+        		height: 600px;
+        		
+        	}
+        	ul li{
+        		width: 100px;
+        		height: 130px;
+        		overflow: hidden;
+				margin-top:30px; 
+				padding: 13px;
+				background: #fff;
+				box-shadow: 15px 15px 15px #000;
+				transition: all 3s;
+        	}
+        	ul li img{
+        		width: 100%;
+        		height: 100%;
+        	}
+
+			@keyframes wo{
+				0%{
+				transform: translate(0, 0) rotate(0deg) scale(1);
+				box-shadow: 15px 15px 15px #000;
+				}
+				50%{
+				transform: translate(1200px,-20px) rotate(180deg) scale(1.5);
+				box-shadow: 45px 45px 15px #000;
+				}
+				100%{
+				transform: translate(0, 0) rotate(360deg) scale(1);
+				box-shadow: 15px 15px 15px #000;
+				}
+			}
+			@keyframes ni{
+				0%{
+				transform: translate(0, 0) rotate(0deg) scale(1);
+				box-shadow: 15px 15px 15px #000;
+				}
+				50%{
+				transform: translate(1200px, 20px) rotate(-180deg) scale(0.5);
+				box-shadow: -15px -15px 15px #000;
+				}
+				100%{
+				transform: translate(0, 0) rotate(-360deg) scale(1);
+				box-shadow: 15px 15px 15px #000;
+				}
+			}
+
+
+			.ul1 li:nth-of-type(1){
+				transform: rotate(20deg);
+				animation:wo 10s linear infinite;
+							}
+			.ul1 li:nth-of-type(1):hover{
+				transform: scale(1.5;)
+			}
+
+
+
+			.ul1 li:nth-of-type(2){
+				animation:ni 10s linear infinite;
+				transform: rotate(80deg);
+
+			}
+			.ul1 li:nth-of-type(2):hover{
+				transform: rotate(-310deg);
+			}
+
+
+			.ul1 li:nth-of-type(3){
+				transform: rotate(-40deg);
+				animation:wo 8s linear infinite;
+			}
+			.ul1 li:nth-of-type(3):hover{
+				transform: rotate(222deg);
+			}
+
+
+			.ul1 li:nth-of-type(4){
+				transform: rotate(30deg);
+				animation:ni 9s linear infinite;
+			}
+			.ul1 li:nth-of-type(4):hover{
+				transform: rotate(-222deg);
+			}
+
+
+
+			.ul2 li:nth-of-type(1){
+				transform: rotate(-30deg);
+				animation:wo 9s linear infinite;
+			}
+			.ul2 li:nth-of-type(1):hover{
+				transform: rotate(100deg);
+			}
+
+
+			.ul2 li:nth-of-type(2){
+				transform: rotate(60deg);
+				animation:ni 7s linear infinite;
+			}
+			.ul2 li:nth-of-type(2):hover{
+				transform: rotate(-130deg);
+			}
+
+
+
+			.ul2 li:nth-of-type(3){
+				animation:wo 6s linear infinite;
+				transform: rotate(-60deg);
+			}
+			.ul2 li:nth-of-type(3):hover{
+				transform: rotate(200deg);
+			}
+
+
+
+			.ul2 li:nth-of-type(4){
+				transform: rotate(80deg);
+				animation:ni 8s linear infinite;
+			}
+			.ul2 li:nth-of-type(4):hover{
+				transform: rotate(-130deg);
+			}
+        </style>
+    </head>
+    <body>
+    <ul class="ul1">
+    	<li><img src="../myimage/9.jpg" alt=""></li>
+    	<li><img src="../myimage/2.jpg" alt=""></li>
+    	<li><img src="../myimage/3.jpg" alt=""></li>
+    	<li><img src="../myimage/4.jpg" alt=""></li>
+    	</ul>
+    <ul class="ul2">
+    	<li><img src="../myimage/5.jpg"" alt=""></li>
+    	<li><img src="../myimage/6.jpg" alt=""></li>
+    	<li><img src="../myimage/7.jpg" alt=""></li>
+    	<li><img src="../myimage/8.jpg" alt=""></li>
+     </ul>
+    </body>
+</html>
