@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" href="css/bootstrap-min.css" />
+		<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap.js"></script>
+		<script type="text/javascript" src="js/index.js" ></script>
+		<link rel="stylesheet" type="text/css" href="css/big750.css" />
+		<link rel="stylesheet" type="text/css" href="css/little750.css" />
+		<script type="text/javascript">
+			$(function(){
+				$('.row').children('li').children('div').hover(function(){
+					$(this).children('div').stop().fadeIn(500);
+				},function(){
+					$(this).children('div').stop().fadeOut(500);
+				});
+				
+				var a=0;
+				var b=0;
+				var c=0;
+				var d=0;
+				$('.rotate').children('div:nth-of-type(1)').children('div').mouseenter(function(){
+					a++;
+					$(this).stop().css({'transform':'rotate('+a*360+'deg)'});
+				})
+				$('.rotate').stop().children('div:nth-of-type(2)').children('div').mouseenter(function(){
+					b++;
+					$(this).stop().css({'transform':'rotate('+b*360+'deg)'});
+				})
+				$('.rotate').children('div:nth-of-type(3)').children('div').mouseenter(function(){
+					c++;
+					$(this).stop().css({'transform':'rotate('+c*360+'deg)'});
+				})
+				$('.rotate').children('div:nth-of-type(4)').children('div').mouseenter(function(){
+					d++;
+					$(this).stop().css({'transform':'rotate('+d*360+'deg)'});
+				})
+				
+				
+				/*点击设置页面高度且有过度时间*/
+				$(document).ready(function(){
+					$('#fuwu').click(function(){
+						$('html,body').animate({scrollTop:$('#fwjs').offset().top},{duration:500,easing:'swing'});
+					});
+					$('#anli').click(function(){
+						$('html,body').animate({scrollTop:$('.anli2').offset().top},{duration:700,easing:'swing'});
+					});
+					$('#wemen').click(function(){
+						$('html,body').animate({scrollTop:$('#wemen2').offset().top},{duration:800,easing:'swing'});
+					});
+					$('#enter').click(function(){
+						$('html,body').animate({scrollTop:$('#fwjs').offset().top},{duration:1000,easing:'swing'});
+					})
+				})
+				
+			})
+			
+			
+		</script>
+		<style type="text/css">
+			* {
+				margin: 0;
+				padding: 0;
+				list-style: none;
+			}
+			.navbar {
+				margin-bottom: 0;
+			}
+			.navbar_left>li {
+				float: left;
+			}
+			.navbar_left>li:nth-of-type(1)>img {
+				width: 35px;
+				height: 35px;
+				margin-right: 20px;
+			}
+			.navbar_left>li:nth-of-type(2) {
+				font-size: 16px;
+				font-weight: bold;
+				font-family: "bookshelf symbol 7";
+				margin-top: 7px;
+				color: #333;
+			}
+			.navbar-right2>li>a {
+				font-weight: bold;
+			}
+			.navbar-right2>li>a:hover {
+				color: #fb7b00 !important;
+			}
+			.header_center{
+				background-color: #fff;
+			}
+			.header_center>span{
+				cursor: pointer;
+				transition: all 1s;
+			}
+			
+			/*旋转div*/
+			.rotate>div>div{
+				transition: all 1s;
+				cursor: pointer;
+			}
+			
+			/*这是鼠标移入移出区*/
+			
+			
+			.centre{
+				*zoom:1 ;
+				margin-top: 150px;
+			}
+			.centre:after{
+				content: "";
+				clear: both;
+				display: block;
+			}
+			.centre>div:nth-of-type(1)>h4{
+				font-size: 22px;
+				font-weight: bold;
+				text-align: center;
+			}
+			.centre>div:nth-of-type(1)>div{
+				height: 3px;
+				width: 40px;
+				background-color: #f7931d;
+				margin: 20px auto 35px auto;
+			}
+			.centre>div:nth-of-type(2)>div{
+				margin-top: 30px;
+				padding: 35px;
+				text-align: center;
+			}
+			.centre>div:nth-of-type(2)>div>.service-icon{
+				padding: 35px;
+				text-align: center;
+			}
+			.centre>div:nth-of-type(2)>div>h4{
+				margin-top: -10px;
+				margin-bottom: 40px;
+				font-size: 18px;
+				font-family: inherit;
+				line-height: 1.1;
+				color: inherit;
+				text-align: center;
+				font-weight: bold;
+			}
+			.centre>div:nth-of-type(2)>div>p{
+				margin: auto;
+				max-width: 160px;
+				line-height: 1.6;
+				text-align: center;
+			}
+			
+			.content{
+				margin-top: 150px;
+			}
+			
+			.content>ul{
+				width: 95%;
+				margin: 0 auto;
+			}
+			.content>ul>li{
+				margin-bottom: 12px;
+				transition: all 1s;
+			}
+			.content>ul>li>div{
+				width: 99.8%;
+				margin: 0 auto;
+				position: relative;
+				cursor: pointer;
+			}
+			.content>ul>li>div>img{
+				width: 100%;
+			}
+			.content>ul>li>div>div{
+				position: absolute;
+				left: 0;
+				top: 0;
+				width: 100%;
+				height: 100%;
+				background: rgba(0,0,0,0.5);
+				display: none;
+			}
+			.content>ul>li>div>div>span{
+				display: block;
+				width: 86%;
+				height: 85%;
+				margin: 1% auto;
+				background: rgba(0,0,0,0.4);
+			}
+			.content>ul>li>div>div>span>h2{
+				color: #fff;
+				padding: 16px;
+				font-size: 21px;
+				line-height: 24px;
+				font-weight: 300;
+			}
+			.content>ul>li>div>div>span>p{
+				color: #fff;
+				margin: 0;
+				padding: 16px;
+				font-size: 16px;
+				line-height: 24px;
+				font-weight: 300;
+				position: absolute;
+				bottom: 3%;
+				right: 5%;
+			}
+			
+			/*点击显示 固定定位*/
+			.active{
+				width: 100%;
+				height: 100%;
+				position: fixed;
+				top: 0;
+				left: 0;
+				background: rgba(20,20,20,0.7);
+				display: none;
+			}
+			
+			
+			.active>span>div>img{
+				width: 100%;
+				height: 100%;
+			}
+			.active>span>ul{
+				width: 100%;
+			}
+			.active>span>ul>li{
+				width: 100%;
+			}
+			.active>span>ul>li>img{
+				width: 100%;
+			}
+			.active>span>div:nth-of-type(2){
+				width: 100%;
+			}
+			
+			
+			#wemen2{
+				margin-top: -100px;
+			}
+			
+			/*底部bottom区*/
+			.bottom{
+				margin-top: 100px;
+				margin-bottom: 120px;
+				*zoom:1 ;
+			}
+			.bottom:after{
+				content: "";
+				clear: both;
+				display: block;
+			}
+			.bottom>div:nth-of-type(1)>h4{
+				text-align: center;
+			}
+			.bottom>div:nth-of-type(1)>div{
+				height: 3px;
+				background-color: #f7931d;
+				margin: 20px auto 35px auto;
+			}
+			
+			.bottom>div:nth-of-type(2)>div{
+				margin: 0 auto;
+			}
+			.bottom>div:nth-of-type(2)>div>div{
+				height: 100%;
+				box-sizing: border-box;
+			}
+			.bottom>div:nth-of-type(2)>div>div:nth-of-type(1)>h1{
+			    font-weight: bold;
+			    color: inherit;
+			}
+			.bottom>div:nth-of-type(2)>div>div:nth-of-type(1)>span{
+				display: block;
+			    font-weight: bold;
+			    color: inherit;
+			}
+			.bottom>div:nth-of-type(2)>div>div:nth-of-type(1)>h4{
+				font-family: "Microsoft YaHei", "宋体", "Helvetica Neue",Helvetica,Arial,sans-serif;
+			    font-weight: bold;
+			    letter-spacing: 4px;
+			    text-indent: 4px;
+			}
+			.bottom>div:nth-of-type(2)>div>div:nth-of-type(1)>p{
+				font-style: normal;
+    			font-weight: bold;
+    			font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    			color: #2f2e2e;
+			}
+			.bottom>div:nth-of-type(2)>div>div:nth-of-type(2)>p{
+				font-family: "Helvetica Neue",Helvetica,Arial,sans-serif";
+   			 	color: #2f2e2e;
+   			 	font-weight: bold;
+			}
+			.bottom>div:nth-of-type(2)>div>div:nth-of-type(2)>img{
+				margin-top: 20px;
+				width: 100%;
+			}
+			
+			
+			/*尾部footer区*/
+			.footer{
+				width: 100%;
+			}
+			.footer>.footer_wrap{
+				
+			}
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			/*大于1100时*/
+			@media only screen and (min-width: 1100px){
+			#portfolio{
+				margin-bottom: 150px;
+			}	
+				
+			  .active>span{
+				display: block;
+				width: 40%;
+				margin: 10% auto;
+				background: #fff;
+			}
+			.active>span>div:nth-of-type(1){
+				float: right;
+				width: 30px;
+				height: 30px;
+				margin-top: -50px;
+				cursor: pointer;
+			}
+			.active>span>div:nth-of-type(2)>h1{
+				font-family: inherit;
+				font-weight: bold;
+				line-height: 1.1;
+				margin:30px;
+				color: #000;
+				text-align: center;
+			}
+			.active>span>div:nth-of-type(2)>p{
+				font-family: "微软雅黑";
+				font-size: 20px;
+				padding-bottom: 20px;
+				text-align: center;
+				color: #000;
+			}
+			
+			
+			/*这是底部bottom区的h1,单独设置一个在这里*/
+				.bottom>div:nth-of-type(2)>div>div:nth-of-type(1)>h1{
+					font-size: 65px;
+					line-height: 0.87;
+				}
+				.bottom>div:nth-of-type(2)>div>div:nth-of-type(1)>span{
+					font-size: 65px;
+					line-height: 0.87;
+				}
+				
+				
+				.footer>.footer_wrap>h3{
+					width: 100%;
+					text-align:center;
+					margin-top: 200px;
+					font-size: 60px;
+					font-weight: bold;
+					color: #fff;
+					display: block;
+				}
+				
+			}
+			
+			
+			/*768到1100时*/
+			@media only screen and (min-width: 768px) and (max-width: 1100px){
+				#portfolio{
+			  	margin-bottom: 80px;
+			    }
+			  .active>span{
+				display: block;
+				width: 60%;
+				margin: 15% auto;
+				background: #fff;
+			}
+			.active>span>div:nth-of-type(1){
+				float: right;
+				width: 30px;
+				height: 30px;
+				margin-top: -30px;
+				cursor: pointer;
+			}
+			.active>span>div:nth-of-type(2)>h1{
+				font-family: inherit;
+				font-weight: bold;
+				font-size: 26px;
+				line-height: 1.1;
+				margin:20px;
+				color: #000;
+				text-align: center;
+			}
+			.active>span>div:nth-of-type(2)>p{
+				font-family: "微软雅黑";
+				font-size: 16px;
+				padding-bottom: 12px;
+				text-align: center;
+				color: #000;
+			}
+			
+			/*这是底部bottom区的h1,单独设置一个在这里*/
+				.bottom>div:nth-of-type(2)>div>div:nth-of-type(1)>h1{
+					font-size: 45px;
+					line-height: 0.87;
+				}
+				.bottom>div:nth-of-type(2)>div>div:nth-of-type(1)>span{
+					font-size: 45px;
+					line-height: 0.87;
+				}
+				
+				
+				.footer>.footer_wrap>h3{
+					display: none;
+				}
+			
+			}
+			/*小于768时*/
+			@media only screen and (max-width: 768px){
+			 #portfolio{
+			  	margin-bottom: 60px;
+			}	
+				
+			  .active>span{
+				display: block;
+				width: 85%;
+				margin: 30% auto;
+				background: #fff;
+			}
+			.active>span>div:nth-of-type(1){
+				float: right;
+				width: 25px;
+				height: 25px;
+				margin-top: -30px;
+				cursor: pointer;
+			}
+			
+			.active>span>div:nth-of-type(2)>h1{
+				font-family: inherit;
+				font-size: 20px;
+				font-weight: bold;
+				line-height: 1.1;
+				margin:10px;
+				color: #000;
+				text-align: center;
+			}
+			.active>span>div:nth-of-type(2)>p{
+				font-family: "微软雅黑";
+				font-size: 14px;
+				padding-bottom: 10px;
+				text-align: center;
+				color: #000;
+			}
+			
+			
+			.footer>.footer_wrap>h3{
+					display: block;
+					font-size: 20px;
+					color: #fff;
+					width: 100%;
+					font-size: 30px;
+					font-weight: bold;
+					text-align: center;
+					margin-top: 100px;
+				}
+	
+			}
+			
+		</style>
+	</head>
+
+	<body>
+		<header class="header">
+			<nav class="navbar navbar-default">
+				<div class="container">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+					        <span class="sr-only">Toggle navigation</span>
+					        <span class="icon-bar"></span>
+					        <span class="icon-bar"></span>
+					        <span class="icon-bar"></span>
+					      </button>
+						<ul class="navbar-brand navbar_left">
+							<li><img src="img/logo1.png" /></li>
+							<li>觅未创意</li>
+						</ul>
+					</div>
+
+					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+						<ul class="nav navbar-nav navbar-right navbar-right2">
+							<li>
+								<a href="#" id="fuwu">服务介绍</a>
+							</li>
+							<li>
+								<a href="#" id="anli">最新案例</a>
+							</li>
+							<li>
+								<a href="#" id="wemen">关于我们</a>
+							</li>
+							<li>
+								<a href="#">联系我们</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+			<div class="header_center">
+				<div>
+					<p>CRE<br />ATIV<br />ITY.<br /></p>
+				</div>
+				<span id="enter"><img src="img/icon.png"/></span>
+			</div>
+		</header>
+		<p  id="fwjs"></p>
+		
+		
+		<div class="container centre">
+			<div>
+				<h4>服务介绍</h4>
+				<div></div>
+			</div>
+			<div class="row rotate">
+				<div class="col-xs-12 col-sm-6 col-md-3 service-item scrollimation scale-in in">
+					<div class="service-icon">
+						<img src="img/ic1.png"/>
+					</div>
+					<h4>品牌</h4>
+					<p>根据品牌文化、价值观和差异性制定品牌策略，设计LOGO/VI系统；我们以前瞻性的眼光创造独特的品牌认同</p>
+				</div>
+				<div class="col-xs-12 col-sm-6 col-md-3 service-item scrollimation scale-in in">
+					<div class="service-icon">
+						<img src="img/ic2.png"/>
+					</div>
+					<h4>包装</h4>
+					<p>包装设计的好坏，对于产品至关重要，直接关系产品的市场表现；我们拥有丰富的成功案例，专业且追求极致</p>
+				</div>
+				<div class="col-xs-12 col-sm-6 col-md-3 service-item scrollimation scale-in in">
+					<div class="service-icon">
+						<img src="img/ic3.png"/>
+					</div>
+					<h4>广告</h4>
+					<p>广告创意、宣传物料设计对于线上线下市场活动必不可少；快速反应和超强的执行力是我们对客户的郑重承诺</p>
+				</div>
+				<div class="col-xs-12 col-sm-6 col-md-3 service-item scrollimation scale-in in">
+					<div class="service-icon">
+						<img src="img/ic4.png"/>
+					</div>
+					<h4>宣传</h4>
+					<p>互联网是一个变化、持续创新的互动平台；我们应用最新的设计理念和技术方案，助您高效的连接每一位客户</p>
+				</div>
+			</div>
+		</div>
+		<!--鼠标移动展示区-->
+		<div id="portfolio" class="anli2">
+			<div class="container-fluid content">
+				<ul class="row" id="xunhuan">
+					<li class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+						<div><img src="img/1.jpg"/><div><span><h2>途家盛捷服务公寓</h2><p>品牌（LOGO/VI）</p></span></div></div>
+					</li>
+					<li class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+						<div><img src="img/2.jpg"/><div><span><h2>MODELAB/爱慕内衣</h2><p>品牌（LOGO/VI）</p></span></div></div>
+					</li>
+					<li class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+						<div><img src="img/3.jpg"/><div><span><h2>觉</h2><p>品牌（LOGO/VI）</p></span></div></div>
+					</li>
+					<li class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+						<div><img src="img/4.jpg"/><div><span><h2>CNZCO兴宇中科</h2><p>品牌（LOGO/VI）</p></span></div></div>
+					</li>
+					<li class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+						<div><img src="img/5.jpg"/><div><span><h2>同仁堂保健酒</h2><p>品牌（LOGO/VI）</p></span></div></div>
+					</li>
+					<li class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+						<div><img src="img/6.jpg"/><div><span><h2>伊利乳品</h2><p>品牌（LOGO/VI）</p></span></div></div>
+					</li>
+					<li class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+						<div><img src="img/7.jpg"/><div><span><h2>雀巢咖啡</h2><p>包装</p></span></div></div>
+					</li>
+					<li class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+						<div><img src="img/8.jpg"/><div><span><h2>雀巢礼盒</h2><p>包装</p></span></div></div>
+					</li>
+					<li class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+						<div>
+							<img src="img/9.jpg"/><div><span><h2>雀巢广告</h2><p>广告</p></span></div>
+						</div>
+					</li>
+					<li class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+						<div>
+							<img src="img/10.jpg"/><div><span><h2>沃尔沃</h2><p>广告</p></span></div>
+						</div>
+					</li>
+					<li class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+						<div>
+							<img src="img/11.jpg"/><div><span><h2>黑猫神蚊香</h2><p>广告</p></span></div>
+						</div>
+					</li>
+					<li class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+						<div>
+							<img src="img/12.jpg"/><div><span><h2>上京东抢零食</h2><p>广告</p></span></div>
+						</div>
+					</li>
+					<li class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+						<div>
+							<img src="img/13.jpg"/><div><span><h2>安师傅</h2><p>广告</p></span></div>
+						</div>
+					</li>
+					<li class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+						<div>
+							<img src="img/14.jpg"/><div><span><h2>M&M豆</h2><p>广告</p></span></div>
+						</div>
+					</li>
+					<li class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+						<div>
+							<img src="img/15.jpg"/><div><span><h2>大众点评玩转迪拜</h2><p>网站</p></span></div>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="active">
+				<span>
+					<div id="yinchang"><img src="img/cericom.png"/></div>
+					<ul>
+						<li><img src="img/10-2.jpg" id="msg"/></li>
+					</ul>
+					<div>
+						<h1 id="msgh1"></h1>
+						<p id="msgp"></p>
+					</div>
+				</span>
+			</div>
+		</div>
+		<p id="wemen2">.</p>
+		
+		<div class="container bottom">
+			<div>
+				<h4>关于我们</h4>
+				<div></div>
+			</div>
+			<div>
+				<div class="row">
+				<div class="col-xs-12 col-sm-5">
+					<h1>MEWE</h1>
+					<span>IDEA.COM</span>
+					<h4>觅未创意™</h4>
+					<p>北京宋庄90艺术区2号楼</p>
+					<p>电话：+86-10-80813586</p>
+					<p>邮箱：business@meweidea.com</p>
+				</div>
+				<div class="col-xs-12 col-sm-6 col-sm-offset-1">
+					<p>我们是领先的品牌咨询&服务平台，由各领域精英组成，包括国际4A美术指导，知名设计公司设计总监、策略总监，知名互联网公司UI负责人、技术主管；</p>
+					<p>我们是一支经验丰富、具有国际化视野和创新能力的团队；</p>
+					<p>我们坚持“与梦想者同行”，致力于成为“从中国制造到中国创造”这场变革的重要参与者。</p>
+					<img src="img/city.png"/>
+				</div>
+				</div>
+			</div>
+		</div>
+		
+		
+		<header class="footer">
+			<div class="footer_wrap">
+				<div class="container">
+					<ul class="row">
+						<li class="col-xs-4 col-sm-4 col-md-3 col-lg-2"><img src="img/a1.png"/></li>
+						<li class="col-xs-4 col-sm-4 col-md-3 col-lg-2"><img src="img/a2.png"/></li>
+						<li class="col-xs-4 col-sm-4 col-md-3 col-lg-2"><img src="img/a3.png"/></li>
+						<li class="col-xs-4 col-sm-4 col-md-3 col-lg-2"><img src="img/a4.png"/></li>
+						<li class="col-xs-4 col-sm-4 col-md-3 col-lg-2"><img src="img/a5.png"/></li>
+						<li class="col-xs-4 col-sm-4 col-md-3 col-lg-2"><img src="img/a6.png"/></li>
+						<li class="col-xs-4 col-sm-4 col-md-3 col-lg-2"><img src="img/a7.png"/></li>
+						<li class="col-xs-4 col-sm-4 col-md-3 col-lg-2"><img src="img/a8.png"/></li>
+						<li class="col-xs-4 col-sm-4 col-md-3 col-lg-2"><img src="img/a9.png"/></li>
+						<li class="col-xs-4 col-sm-4 col-md-3 col-lg-2"><img src="img/a10.png"/></li>
+						<li class="col-xs-4 col-sm-4 col-md-3 col-lg-2"><img src="img/a11.png"/></li>
+						<li class="col-xs-4 col-sm-4 col-md-3 col-lg-2"><img src="img/a12.png"/></li>
+					</ul>
+				</div>
+				<h3>谢谢欣赏</h3>
+			</div>
+		</header>
+
+	</body>
+
+</html>
